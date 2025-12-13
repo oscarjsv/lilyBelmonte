@@ -65,8 +65,8 @@
   /* ========================================
      DIMENSIONES DE LAYOUT
      ======================================== */
-  --header-height-mobile: 70px;
-  --header-height-desktop: 90px;
+  --header-height-mobile: 60px; /* Reduced from 70px */
+  --header-height-desktop: 76px; /* Reduced from 90px */
 
   /* ========================================
      SOMBRAS (Elevación sutil)
