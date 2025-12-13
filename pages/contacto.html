@@ -63,93 +63,126 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="section__container">
+            <a href="../index.html">Inicio</a>
+            <span>/</span>
+            <span>Contacto</span>
+        </div>
+    </div>
+
+    <!-- Main Content Section: Vogue Redesign -->
+    <section class="section section--tight-top">
         <div class="section__container">
 
-            <div
-                style="display: grid; grid-template-columns: 1fr; gap: var(--spacing-xl); margin-top: var(--spacing-xl); max-width: 1000px; margin-left: auto; margin-right: auto;">
+            <!-- Intro Text -->
+            <div style="text-align: center; max-width: 700px; margin: 0 auto; margin-bottom: var(--spacing-xl);">
+                <h2 style="font-family: var(--font-primary); font-size: 2rem; margin-bottom: var(--spacing-sm);">
+                    Inicia tu Transformación
+                </h2>
+                <p style="color: var(--color-taupe); font-size: 1.1rem; line-height: 1.6;">
+                    Ya sea para agendar tu primera valoración o resolver dudas sobre nuestros protocolos,
+                    nuestro equipo de <em>concierge</em> está listo para guiarte en cada paso.
+                </p>
+            </div>
 
-                <!-- Contact Info -->
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
+            <div class="contact-grid">
 
-                    <!-- Phone -->
-                    <div
-                        style="text-align: center; padding: var(--spacing-lg); background: var(--color-gris-calido); border-radius: var(--radius-lg);">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📞</div>
-                        <h3
-                            style="font-family: var(--font-primary); font-size: var(--font-size-h4); margin-bottom: var(--spacing-xs);">
-                            Teléfono</h3>
-                        <a href="tel:+525512345678" style="color: var(--color-naranja); font-weight: 600;">+52 55 1234
-                            5678</a>
+                <!-- Left Column: Quick Actions & Info (Mobile Top) -->
+                <div>
+                    <h3
+                        style="font-family: var(--font-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); color: var(--color-negro);">
+                        Contacto Directo
+                    </h3>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/573014730572" target="_blank" class="action-card">
+                            <span class="action-card__icon">💬</span>
+                            <div>
+                                <div class="action-card__title">WhatsApp Citas</div>
+                                <div class="action-card__text">Respuesta inmediata</div>
+                            </div>
+                        </a>
+
+                        <a href="tel:+573014730572" class="action-card">
+                            <span class="action-card__icon">📞</span>
+                            <div>
+                                <div class="action-card__title">Llamada Directa</div>
+                                <div class="action-card__text">Agendar cita telefónica</div>
+                            </div>
+                        </a>
                     </div>
 
-                    <!-- Email -->
-                    <div
-                        style="text-align: center; padding: var(--spacing-lg); background: var(--color-gris-calido); border-radius: var(--radius-lg);">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">✉️</div>
-                        <h3
-                            style="font-family: var(--font-primary); font-size: var(--font-size-h4); margin-bottom: var(--spacing-xs);">
-                            Email</h3>
-                        <a href="mailto:contacto@dralily.com"
-                            style="color: var(--color-naranja); font-weight: 600;">contacto@dralily.com</a>
+                    <div style="margin-top: var(--spacing-xl);">
+                        <h4
+                            style="font-family: var(--font-primary); font-size: 1.25rem; margin-bottom: var(--spacing-sm);">
+                            Ubicación
+                        </h4>
+                        <p
+                            style="color: var(--color-taupe); margin-bottom: var(--spacing-sm); line-height: 1.6; font-size: 1rem;">
+                            Cra 44 # 84 - 178<br>
+                            Barranquilla, Colombia
+                        </p>
                     </div>
 
-                    <!-- WhatsApp -->
+                    <!-- Map (Vogue Style) -->
                     <div
-                        style="text-align: center; padding: var(--spacing-lg); background: var(--color-gris-calido); border-radius: var(--radius-lg);">
-                        <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">💬</div>
-                        <h3
-                            style="font-family: var(--font-primary); font-size: var(--font-size-h4); margin-bottom: var(--spacing-xs);">
-                            WhatsApp</h3>
-                        <a href="https://wa.me/525512345678" target="_blank"
-                            style="color: var(--color-naranja); font-weight: 600;">Enviar mensaje</a>
+                        style="margin-top: var(--spacing-lg); width: 100%; height: 300px; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm);">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.937617961239!2d-74.8118092!3d11.0210217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d9c02d7653d%3A0x6e00a3014730572!2sCra.+44+%2384-178%2C+Nte.+Centro+Historico%2C+Barranquilla%2C+Atl%C3%A1ntico%2C+Colombia!5e0!3m2!1sen!2sco!4v1700000000000!5m2!1sen!2sco"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-
                 </div>
 
-                <!-- Address & Hours -->
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+                <!-- Right Column: Vogue Form -->
+                <div>
+                    <h3
+                        style="font-family: var(--font-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); color: var(--color-negro);">
+                        Cuéntanos tu Historia
+                    </h3>
 
-                    <!-- Address -->
-                    <div
-                        style="padding: var(--spacing-lg); background: var(--color-greige); border-radius: var(--radius-lg);">
-                        <h3
-                            style="font-family: var(--font-primary); font-size: var(--font-size-h3); margin-bottom: var(--spacing-md);">
-                            Ubicación</h3>
-                        <p style="color: var(--color-taupe); line-height: var(--line-height-relaxed);">
-                            Av. Principal 123<br />
-                            Colonia Centro<br />
-                            Ciudad de México, 01000
-                        </p>
-                    </div>
+                    <form class="vogue-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre"
+                                required>
+                        </div>
 
-                    <!-- Hours -->
-                    <div
-                        style="padding: var(--spacing-lg); background: var(--color-greige); border-radius: var(--radius-lg);">
-                        <h3
-                            style="font-family: var(--font-primary); font-size: var(--font-size-h3); margin-bottom: var(--spacing-md);">
-                            Horarios</h3>
-                        <p style="color: var(--color-taupe); line-height: var(--line-height-relaxed);">
-                            <strong>Lunes - Viernes:</strong> 9:00 AM - 7:00 PM<br />
-                            <strong>Sábado:</strong> 10:00 AM - 3:00 PM<br />
-                            <strong>Domingo:</strong> Cerrado
-                        </p>
-                    </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="tucorreo@ejemplo.com" required>
+                        </div>
 
-                </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Teléfono / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+52 ..." required>
+                        </div>
 
-                <!-- Map Placeholder -->
-                <div
-                    style="width: 100%; height: 400px; background: var(--color-greige); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--color-taupe);">
-                    <div style="text-align: center;">
-                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🗺️</div>
-                        <p>Mapa de Google Maps aquí</p>
-                        <p style="font-size: var(--font-size-small); margin-top: var(--spacing-xs);">
-                            Inserta el iframe de Google Maps en producción
-                        </p>
-                    </div>
+                        <div class="form-group">
+                            <label for="interest" class="form-label">¿Qué te gustaría mejorar?</label>
+                            <select id="interest" name="interest" class="form-input" style="cursor: pointer;">
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="facial">Rejuvenecimiento Facial</option>
+                                <option value="corporal">Contorno Corporal</option>
+                                <option value="capilar">Salud Capilar</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Tu Mensaje</label>
+                            <textarea id="message" name="message" class="form-input" rows="3"
+                                placeholder="Cuéntanos brevemente tus objetivos..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            Iniciar Conversación
+                        </button>
+                    </form>
                 </div>
 
             </div>
@@ -166,18 +199,19 @@
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Contacto</h4>
-                    <p class="footer__text"><a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a></p>
+                    <p class="footer__text"><a href="tel:+573014730572" class="footer__link">+57 301 473 0572</a></p>
                     <p class="footer__text"><a href="mailto:contacto@dralily.com"
                             class="footer__link">contacto@dralily.com</a></p>
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Ubicación</h4>
-                    <p class="footer__text">Av. Principal 123<br />CDMX</p>
+                    <p class="footer__text">Cra 44 # 84 - 178<br />Barranquilla, Colombia</p>
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Síguenos</h4>
                     <div class="footer__social">
-                        <a href="https://instagram.com" class="footer__social-link">Instagram</a>
+                        <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
+                            class="footer__social-link">Instagram</a>
                     </div>
                 </div>
             </div>

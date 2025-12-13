@@ -397,9 +397,123 @@ body.internal-page {
   font-weight: 300;
 }
 
-/* Last item (active) */
-.breadcrumbs span:last-child {
+/* ========================================
+   CONTACT PAGE (Vogue/High Conversion)
+   ======================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+}
+
+/* Quick Actions (Mobile First) */
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.action-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-beige);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-normal);
+  text-decoration: none;
   color: var(--color-negro);
-  font-weight: var(--font-weight-semibold);
-  border-bottom: 1px solid var(--color-naranja); /* Sutil indicador */
+}
+
+.action-card:hover {
+  border-color: var(--color-naranja);
+  background-color: #fafafa;
+  transform: translateY(-2px);
+}
+
+.action-card__icon {
+  font-size: 1.5rem;
+  color: var(--color-naranja);
+}
+
+.action-card__title {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.action-card__text {
+  font-size: 0.9rem;
+  color: var(--color-taupe);
+}
+
+/* Vogue Form Styling */
+.vogue-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  position: relative;
+}
+
+/* Minimalist Input */
+.form-input {
+  width: 100%;
+  padding: var(--spacing-sm) 0;
+  border: none;
+  border-bottom: 1px solid var(--color-beige);
+  background: transparent;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--color-negro);
+  transition: border-color var(--transition-normal);
+  border-radius: 0; /* Remove default iOS border radius */
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom-color: var(--color-naranja);
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-taupe);
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.05em;
+}
+
+.form-submit {
+  background-color: var(--color-negro);
+  color: #ffffff;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-top: var(--spacing-md);
+  align-self: flex-start;
+}
+
+.form-submit:hover {
+  background-color: var(--color-naranja);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(204, 153, 102, 0.3);
 }
