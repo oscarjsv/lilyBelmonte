@@ -19,7 +19,7 @@
 .header__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.75rem var(--spacing-sm);
+  padding: 1.35rem var(--spacing-sm); /* Height ~70px to match var */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +169,7 @@
 /* Tablet and Desktop */
 @media (min-width: 768px) {
   .header__container {
-    padding: 1rem var(--spacing-md);
+    padding: 2rem var(--spacing-md); /* Height ~90px to match var */
   }
 
   .nav__list {
