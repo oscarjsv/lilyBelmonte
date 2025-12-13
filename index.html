@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>
+    Dra. Lily | Alta Estética Facial y Corporal | Belleza Auténtica
+  </title>
+  <meta name="description"
+    content="Clínica de estética y bienestar con la Dra. Lily. Tratamientos faciales, corporales, tecnología láser y cuidado capilar. Belleza auténtica y dignidad." />
+  <meta name="keywords"
+    content="estética facial, tratamientos corporales, láser, Dra. Lily, belleza, skincare, toxina, radiesse, exosomas" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- ========================================
+         HEADER / NAVIGATION
+         ======================================== -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#home" class="header__logo">Dra. Lily</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li class="nav__item">
+            <a href="#servicios" class="nav__link nav__link--has-submenu">Tratamientos</a>
+            <ul class="nav__dropdown">
+              <li><a href="pages/servicios-faciales.html" class="nav__dropdown-link">Facial</a></li>
+              <li><a href="pages/servicios-corporales.html" class="nav__dropdown-link">Corporal</a></li>
+              <li><a href="pages/medicina-biorreguladora.html" class="nav__dropdown-link">Medicina Biorreguladora</a>
+              </li>
+              <li><a href="pages/capilar-bienestar.html" class="nav__dropdown-link">Capilar</a></li>
+              <li><a href="pages/tecnologia-laser.html" class="nav__dropdown-link">Tecnologías</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#tienda" class="nav__link">Tienda</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================
+         BLOQUE 1: HERO SECTION
+         ======================================== -->
+  <section class="hero section--hero" id="home">
+    <!-- Background Image/Video -->
+    <img src="assets/images/hero/hero-background.jpg" alt="Piel perfecta y radiante" class="hero__background"
+      loading="eager" />
+
+    <!-- Dark Overlay for text readability -->
+    <div class="hero__overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <h1 class="hero__title">
+        La Ciencia de la Piel, Elevada a Arte
+      </h1>
+
+      <p class="hero__subtitle">
+        Descubre la armonía perfecta entre medicina estética avanzada y tu belleza auténtica.
+      </p>
+
+      <a href="#servicios" class="cta-button hero__cta">
+        Descubre nuestros tratamientos
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================
+         BLOQUE 2: SHOWCASE DE SERVICIOS
+         ======================================== -->
+  <section class="services section" id="servicios">
+    <div class="section__container">
+      <header class="section__header">
+        <h2 class="section__title">Nuestros Tratamientos</h2>
+        <p class="section__subtitle">
+          Protocolos especializados para cada necesidad
+        </p>
+      </header>
+
+      <div class="services__grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+
+        <!-- 1. FACIAL -->
+        <article class="service-card" style="height: 100%; display: flex; flex-direction: column;">
+          <img src="assets/images/services/facial.jpg" alt="Tratamientos Faciales" class="service-card__image"
+            loading="lazy" style="height: 250px; object-fit: cover;" />
+          <div class="service-card__content" style="flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 class="service-card__title">
+              Luminosidad y Juventud Eterna
+            </h3>
+            <p class="service-card__description" style="flex-grow: 1;">
+              Protocolos de vanguardia para una piel radiante que desafía el tiempo.
+            </p>
+            <a href="pages/servicios-faciales.html" class="service-card__cta">
+              Ver detalles
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. CORPORAL -->
+        <article class="service-card" style="height: 100%; display: flex; flex-direction: column;">
+          <img src="assets/images/services/corporal.jpg" alt="Tratamientos Corporales" class="service-card__image"
+            loading="lazy" style="height: 250px; object-fit: cover;" />
+          <div class="service-card__content" style="flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 class="service-card__title">
+              Esculpiendo Tu Mejor Versión
+            </h3>
+            <p class="service-card__description" style="flex-grow: 1;">
+              Tecnología no invasiva para definir, reafirmar y armonizar tu silueta.
+            </p>
+            <a href="pages/servicios-corporales.html" class="service-card__cta">
+              Ver detalles
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. MEDICINA BIORREGULADORA -->
+        <article class="service-card" style="height: 100%; display: flex; flex-direction: column;">
+          <img src="assets/images/services/bio.jpg" alt="Medicina Biorreguladora" class="service-card__image"
+            loading="lazy" style="height: 250px; object-fit: cover;" />
+          <div class="service-card__content" style="flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 class="service-card__title">
+              Equilibrio Desde el Interior
+            </h3>
+            <p class="service-card__description" style="flex-grow: 1;">
+              Revitaliza tu organismo y potencia tu bienestar con terapias celulares avanzadas.
+            </p>
+            <a href="pages/medicina-biorreguladora.html" class="service-card__cta">
+              Ver detalles
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. CAPILAR -->
+        <article class="service-card" style="height: 100%; display: flex; flex-direction: column;">
+          <img src="assets/images/services/capilar.jpg" alt="Tratamientos Capilares" class="service-card__image"
+            loading="lazy" style="height: 250px; object-fit: cover;" />
+          <div class="service-card__content" style="flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 class="service-card__title">
+              Fortaleza y Densidad Absoluta
+            </h3>
+            <p class="service-card__description" style="flex-grow: 1;">
+              Recupera la vitalidad de tu cabello con tratamientos de regeneración profunda.
+            </p>
+            <a href="pages/capilar-bienestar.html" class="service-card__cta">
+              Ver detalles
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. TECNOLOGÍAS -->
+        <article class="service-card" style="height: 100%; display: flex; flex-direction: column;">
+          <img src="assets/images/services/laser.jpg" alt="Tecnologías Avanzadas" class="service-card__image"
+            loading="lazy" style="height: 250px; object-fit: cover;" />
+          <div class="service-card__content" style="flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 class="service-card__title">
+              Innovación al Servicio de tu Piel
+            </h3>
+            <p class="service-card__description" style="flex-grow: 1;">
+              La aparatología más avanzada del mundo para resultados visibles y duraderos.
+            </p>
+            <a href="pages/tecnologias.html" class="service-card__cta">
+              Ver detalles
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+         BLOQUE 3: EXPERIENCIA - DRA. LILY
+         ======================================== -->
+  <section class="dr-lily section" id="nosotros">
+    <div class="section__container">
+      <div class="dr-lily__container">
+        <!-- Foto de la Dra. Lily -->
+        <div class="dr-lily__image-wrapper">
+          <img src="assets/images/team/dra-lily.jpg" alt="Dra. Lily - Especialista en Estética" class="dr-lily__image"
+            loading="lazy" />
+        </div>
+
+        <!-- Contenido -->
+        <div class="dr-lily__content">
+          <h2 class="dr-lily__title">Nosotros</h2>
+
+          <p class="dr-lily__bio">
+            Más que estética, es una celebración de tu identidad. Con 15 años de trayectoria, fusiono la precisión
+            médica con una visión artística para revelar tu versión más auténtica y segura.
+          </p>
+
+          <a href="pages/sobre-dra-lily.html" class="cta-button">
+            Conoce más
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+         BLOQUE 4: BOUTIQUE SKINCARE
+         ======================================== -->
+  <section class="boutique section" id="tienda">
+    <div class="section__container">
+      <header class="boutique__header">
+        <h2 class="boutique__title">
+          Curaduría Skincare
+        </h2>
+        <p class="boutique__subtitle">
+          Una selección exclusiva de fórmulas dermocosméticas para prolongar los resultados de cabina en la intimidad de
+          tu hogar.
+        </p>
+      </header>
+
+      <!-- Carrusel de Productos -->
+      <div class="carousel">
+        <!-- (Same carousel setup) -->
+        <div class="carousel__track">
+          <!-- Producto 1 -->
+          <div class="carousel__item">
+            <article class="product-card">
+              <img src="assets/images/products/product-1.jpg" alt="Serum Facial Vitamina C" class="product-card__image"
+                loading="lazy" />
+              <h3 class="product-card__name">Serum Vitamina C</h3>
+              <p class="product-card__price">$850 MXN</p>
+              <button class="product-card__button">Comprar</button>
+            </article>
+          </div>
+          <!-- Producto 2 -->
+          <div class="carousel__item">
+            <article class="product-card">
+              <img src="assets/images/products/product-2.jpg" alt="Crema Hidratante Facial" class="product-card__image"
+                loading="lazy" />
+              <h3 class="product-card__name">Crema Hidratante</h3>
+              <p class="product-card__price">$1,200 MXN</p>
+              <button class="product-card__button">Comprar</button>
+            </article>
+          </div>
+          <!-- Producto 3 -->
+          <div class="carousel__item">
+            <article class="product-card">
+              <img src="assets/images/products/product-3.jpg" alt="Protector Solar SPF 50" class="product-card__image"
+                loading="lazy" />
+              <h3 class="product-card__name">Protector Solar SPF 50</h3>
+              <p class="product-card__price">$950 MXN</p>
+              <button class="product-card__button">Comprar</button>
+            </article>
+          </div>
+        </div>
+        <div class="carousel__controls"></div>
+      </div>
+
+      <div class="boutique__cta-wrapper">
+        <a href="pages/tienda.html" class="cta-button cta-button--secondary">
+          Ir a la Tienda
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+         BLOQUE 5: FOOTER
+         ======================================== -->
+  <footer class="footer" id="contacto">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <!-- Columna 1: Logo y descripción -->
+        <div class="footer__column">
+          <h3 class="footer__logo">Dra. Lily</h3>
+          <p class="footer__text">
+            Clínica de estética y bienestar. Belleza auténtica.
+          </p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="footer__column">
+          <h4 class="footer__title">Contacto</h4>
+          <p class="footer__text">
+            <a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a>
+          </p>
+          <p class="footer__text">
+            <a href="mailto:contacto@dralily.com" class="footer__link">contacto@dralily.com</a>
+          </p>
+        </div>
+
+        <!-- Columna 3: Dirección -->
+        <div class="footer__column">
+          <h4 class="footer__title">Ubicación</h4>
+          <p class="footer__text">
+            Av. Principal 123<br />
+            CDMX
+          </p>
+        </div>
+
+        <!-- Columna 4: Redes -->
+        <div class="footer__column">
+          <h4 class="footer__title">Síguenos</h4>
+          <!-- Social icons (same as before) -->
+          <div class="footer__social">
+            <!-- Instagram Icon -->
+            <a href="https://instagram.com" class="footer__social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Dra. Lily. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

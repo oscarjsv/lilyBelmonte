@@ -1,0 +1,190 @@
+/* Typography System - Dra. Lily Brand Manual */
+
+/* ========================================
+   FONT IMPORTS
+   ======================================== */
+
+/* Legquinne - Editorial Serif (Títulos) */
+/* NOTA: Reemplazar con la fuente real cuando esté disponible */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* Inter Tight - Sans Serif (Cuerpo) */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap");
+
+/* ========================================
+   BASE TYPOGRAPHY
+   ======================================== */
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-negro);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   HEADINGS (Alto contraste editorial)
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-negro);
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+}
+
+h5 {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h6 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ========================================
+   BODY TEXT
+   ======================================== */
+
+p {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-taupe);
+}
+
+.small-text {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-normal);
+}
+
+/* ========================================
+   SPECIAL TEXT STYLES
+   ======================================== */
+
+.text-serif {
+  font-family: var(--font-primary);
+}
+
+.text-sans {
+  font-family: var(--font-secondary);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-taupe {
+  color: var(--color-taupe);
+}
+
+.text-beige {
+  color: var(--color-beige);
+}
+
+.text-naranja {
+  color: var(--color-naranja);
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+  color: var(--color-naranja);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-vino);
+}
+
+/* ========================================
+   EMPHASIS
+   ======================================== */
+
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+/* ========================================
+   QUOTES
+   ======================================== */
+
+blockquote {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: var(--line-height-relaxed);
+  color: var(--color-taupe);
+  border-left: 4px solid var(--color-naranja);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 767px) {
+  h1 {
+    letter-spacing: -0.01em;
+  }
+
+  blockquote {
+    font-size: 1.25rem;
+    padding-left: var(--spacing-sm);
+  }
+}

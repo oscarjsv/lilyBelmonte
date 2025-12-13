@@ -1,0 +1,124 @@
+/* Design System Variables - Dra. Lily Brand Manual */
+
+:root {
+  /* ========================================
+     COLORES PRINCIPALES (Base Nude)
+     ======================================== */
+  --color-taupe: #776f65;
+  --color-beige: #c6a992;
+  --color-greige: #d7d2cb;
+  --color-gris-calido: #f3f1ef;
+
+  /* ========================================
+     COLORES DE ACENTO (Pop de color)
+     ======================================== */
+  --color-negro: #2d2926;
+  --color-arena: #eed484;
+  --color-naranja: #dc582a;
+  --color-vino: #9e2a2f;
+
+  /* ========================================
+     TIPOGRAFÍA (Manual de Marca)
+     ======================================== */
+  --font-primary: "Legquinne", serif; /* Títulos - Editorial Vogue */
+  --font-secondary: "Inter Tight", sans-serif; /* Cuerpo - Legibilidad */
+
+  /* Tamaños de fuente (Mobile First) */
+  --font-size-h1: 2.5rem; /* 40px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.5rem; /* 24px */
+  --font-size-h4: 1.25rem; /* 20px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-small: 0.875rem; /* 14px */
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ========================================
+     ESPACIADOS (Sistema de 8px)
+     ======================================== */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-lg: 3rem; /* 48px */
+  --spacing-xl: 4rem; /* 64px */
+  --spacing-2xl: 6rem; /* 96px */
+  --spacing-3xl: 8rem; /* 128px */
+
+  /* ========================================
+     BREAKPOINTS (Mobile First)
+     ======================================== */
+  --mobile: 375px;
+  --tablet: 768px;
+  --desktop: 1200px;
+  --desktop-xl: 1440px;
+
+  /* ========================================
+     DIMENSIONES DE LAYOUT
+     ======================================== */
+  --header-height-mobile: 70px;
+  --header-height-desktop: 90px;
+
+  /* ========================================
+     SOMBRAS (Elevación sutil)
+     ======================================== */
+  --shadow-sm: 0 2px 4px rgba(45, 41, 38, 0.1);
+  --shadow-md: 0 4px 12px rgba(45, 41, 38, 0.15);
+  --shadow-lg: 0 8px 24px rgba(45, 41, 38, 0.2);
+
+  /* ========================================
+     TRANSICIONES (Suaves y premium)
+     ======================================== */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* ========================================
+     BORDER RADIUS (Suavidad moderna)
+     ======================================== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     Z-INDEX (Capas de profundidad)
+     ======================================== */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* ========================================
+   RESPONSIVE FONT SIZES (Tablet+)
+   ======================================== */
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: 3.5rem; /* 56px */
+    --font-size-h2: 2.5rem; /* 40px */
+    --font-size-h3: 2rem; /* 32px */
+    --font-size-h4: 1.5rem; /* 24px */
+    --font-size-body: 1.125rem; /* 18px */
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size-h1: 4rem; /* 64px */
+    --font-size-h2: 3rem; /* 48px */
+    --font-size-h3: 2.25rem; /* 36px */
+  }
+}
