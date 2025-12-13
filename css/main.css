@@ -140,7 +140,7 @@
 .treatment-grid {
   display: grid;
   gap: var(--spacing-lg);
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-md);
 }
 
 @media (min-width: 768px) {

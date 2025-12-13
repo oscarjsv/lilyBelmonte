@@ -404,8 +404,8 @@ body.internal-page {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xl);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
 }
 
 @media (min-width: 992px) {
