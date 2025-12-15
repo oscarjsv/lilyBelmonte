@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda | Productos Skincare | Dra. Lily</title>
+    <title>Boutique Skincare | Productos Profesionales | Dra. Lily</title>
     <meta name="description"
-        content="Productos de skincare recomendados por la Dra. Lily. Lleva el cuidado profesional a casa." />
+        content="Descubre productos de skincare profesional recomendados por la Dra. Lily. Envío a toda la República Mexicana." />
 
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
@@ -52,88 +52,408 @@
     <!-- Page Header with Image -->
     <section class="page-header">
         <img src="../assets/images/headers/header-tienda.jpg" alt="Boutique Skincare" />
-
         <div></div>
         <div class="section__container">
             <h1 class="section__title" style="color: var(--color-blanco); text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                 Boutique Skincare</h1>
             <p class="section__subtitle" style="color: var(--color-blanco); max-width: 600px; margin: 0 auto;">
-                Los productos recomendados por la Dra. Lily para tu rutina diaria
+                Productos profesionales para cuidado de la piel
             </p>
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--color-gris-calido);">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="section__container">
+            <a href="../index.html">Inicio</a>
+            <span>›</span>
+            <span>Tienda</span>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="section shop-section">
         <div class="section__container">
 
-            <!-- Products Grid -->
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-xl);">
+            <!-- Shop Toolbar -->
+            <div class="shop-toolbar">
+                <div class="shop-toolbar__results">
+                    Mostrando 12 resultados
+                </div>
+                <div class="shop-toolbar__controls">
+                    <select class="shop-select" id="shop-sort">
+                        <option value="default">Ordenar por defecto</option>
+                        <option value="popularity">Ordenar por popularidad</option>
+                        <option value="rating">Ordenar por valoración</option>
+                        <option value="price-low">Precio: bajo a alto</option>
+                        <option value="price-high">Precio: alto a bajo</option>
+                    </select>
+                </div>
+            </div>
 
-                <!-- Product 1 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-1.jpg" alt="Serum Facial Vitamina C"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Serum Vitamina C</h3>
-                    <p class="product-card__price">$850 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+            <!-- Main Shop Grid -->
+            <div class="shop-layout">
 
-                <!-- Product 2 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-2.jpg" alt="Crema Hidratante Facial"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Crema Hidratante</h3>
-                    <p class="product-card__price">$1,200 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="shop-widget">
+                        <h3 class="shop-widget__title">Categorías</h3>
+                        <ul class="shop-categories">
+                            <li class="shop-category active">
+                                <a href="#all">Todos los productos</a>
+                                <span class="count">(12)</span>
+                            </li>
+                            <li class="shop-category">
+                                <a href="#serums">Serums</a>
+                                <span class="count">(4)</span>
+                            </li>
+                            <li class="shop-category">
+                                <a href="#cremas">Cremas</a>
+                                <span class="count">(3)</span>
+                            </li>
+                            <li class="shop-category">
+                                <a href="#limpiadores">Limpiadores</a>
+                                <span class="count">(2)</span>
+                            </li>
+                            <li class="shop-category">
+                                <a href="#proteccion">Protección Solar</a>
+                                <span class="count">(2)</span>
+                            </li>
+                            <li class="shop-category">
+                                <a href="#mascarillas">Mascarillas</a>
+                                <span class="count">(1)</span>
+                            </li>
+                        </ul>
+                    </div>
 
-                <!-- Product 3 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-3.jpg" alt="Protector Solar SPF 50"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Protector Solar SPF 50</h3>
-                    <p class="product-card__price">$950 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+                    <div class="shop-widget">
+                        <h3 class="shop-widget__title">Rango de Precio</h3>
+                        <div class="price-filter">
+                            <input type="range" min="500" max="2000" class="price-slider" />
+                            <div class="price-range">
+                                <span>$500</span>
+                                <span>$2,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
 
-                <!-- Product 4 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-4.jpg" alt="Mascarilla Revitalizante"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Mascarilla Revitalizante</h3>
-                    <p class="product-card__price">$750 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+                <!-- Products Grid -->
+                <div class="shop-products">
+                    <div class="products-grid">
 
-                <!-- Product 5 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-1.jpg" alt="Tónico Facial"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Tónico Facial</h3>
-                    <p class="product-card__price">$680 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+                        <!-- Product 1 -->
+                        <article class="woo-product">
+                            <div class="woo-product__badge">Bestseller</div>
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-1.jpg" alt="Serum Facial Vitamina C"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Serums</span>
+                                <h3 class="woo-product__name">Serum Vitamina C</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(24)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Potente antioxidante que ilumina y unifica el tono de la piel
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$850 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- Product 6 -->
-                <article class="product-card">
-                    <img src="../assets/images/products/product-2.jpg" alt="Contorno de Ojos"
-                        class="product-card__image" />
-                    <h3 class="product-card__name">Contorno de Ojos</h3>
-                    <p class="product-card__price">$1,100 MXN</p>
-                    <button class="product-card__button">Comprar</button>
-                </article>
+                        <!-- Product 2 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-2.jpg" alt="Crema Hidratante Facial"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Cremas</span>
+                                <h3 class="woo-product__name">Crema Hidratante Premium</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-count">(18)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Hidratación profunda 24h con ácido hialurónico y niacinamida
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$1,200 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 3 -->
+                        <article class="woo-product">
+                            <div class="woo-product__badge woo-product__badge--new">Nuevo</div>
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-3.jpg" alt="Protector Solar SPF 50"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Protección Solar</span>
+                                <h3 class="woo-product__name">Protector Solar SPF 50</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(42)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Protección UVA/UVB de amplio espectro, textura ultraligera
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$950 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 4 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-4.jpg" alt="Mascarilla Revitalizante"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Mascarillas</span>
+                                <h3 class="woo-product__name">Mascarilla Revitalizante</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(31)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Tratamiento intensivo nocturno con péptidos y vitaminas
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$750 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 5 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-1.jpg" alt="Tónico Facial"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Limpiadores</span>
+                                <h3 class="woo-product__name">Tónico Equilibrante</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-count">(15)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Equilibra el pH y prepara la piel para tratamientos posteriores
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$680 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 6 -->
+                        <article class="woo-product">
+                            <div class="woo-product__badge">Bestseller</div>
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-2.jpg" alt="Contorno de Ojos"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Cremas</span>
+                                <h3 class="woo-product__name">Contorno de Ojos</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(36)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Reduce ojeras, bolsas y líneas finas con cafeína y péptidos
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$1,100 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 7 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-3.jpg" alt="Gel Limpiador"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Limpiadores</span>
+                                <h3 class="woo-product__name">Gel Limpiador Suave</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(29)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Limpieza profunda sin resecar, ideal para todo tipo de piel
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$620 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 8 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-4.jpg" alt="Serum Retinol"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Serums</span>
+                                <h3 class="woo-product__name">Serum Retinol Nocturno</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-count">(22)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Potente anti-edad con retinol encapsulado de liberación lenta
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$1,450 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 9 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-1.jpg" alt="Sérum Ácido Hialurónico"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Serums</span>
+                                <h3 class="woo-product__name">Sérum Ácido Hialurónico</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(48)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Hidratación profunda con tres pesos moleculares de AH
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$920 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 10 -->
+                        <article class="woo-product">
+                            <div class="woo-product__badge woo-product__badge--new">Nuevo</div>
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-2.jpg" alt="Crema Noche"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Cremas</span>
+                                <h3 class="woo-product__name">Crema Reparadora Nocturna</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(12)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Restaura y regenera la piel durante el descanso nocturno
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$1,350 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 11 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-3.jpg" alt="Protector con Color"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Protección Solar</span>
+                                <h3 class="woo-product__name">Protector Solar con Color</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-count">(26)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    SPF 50 con cobertura ligera y acabado natural mate
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$1,050 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 12 -->
+                        <article class="woo-product">
+                            <div class="woo-product__image-wrapper">
+                                <img src="../assets/images/products/product-4.jpg" alt="Serum Niacinamida"
+                                    class="woo-product__image" />
+                                <button class="woo-product__quick-view">Vista Rápida</button>
+                            </div>
+                            <div class="woo-product__content">
+                                <span class="woo-product__category">Serums</span>
+                                <h3 class="woo-product__name">Serum Niacinamida 10%</h3>
+                                <div class="woo-product__rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(39)</span>
+                                </div>
+                                <p class="woo-product__description">
+                                    Reduce poros, controla sebo y unifica el tono de la piel
+                                </p>
+                                <div class="woo-product__footer">
+                                    <span class="woo-product__price">$890 <small>COP</small></span>
+                                    <button class="woo-product__cart">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
 
             </div>
 
-            <div style="text-align: center; margin-top: var(--spacing-xl);">
-                <p style="color: var(--color-taupe); margin-bottom: var(--spacing-md);">
-                    ¿Necesitas asesoría personalizada? Agenda una consulta con la Dra. Lily
-                </p>
-                <a href="../index.html#contacto" class="cta-button">
-                    Contactar
-                </a>
-            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-gris-calido); padding: var(--spacing-xl) 0;">
+        <div class="section__container" style="text-align: center;">
+            <h2
+                style="font-family: var(--font-primary); font-size: var(--font-size-h3); margin-bottom: var(--spacing-sm); color: var(--color-negro);">
+                ¿Necesitas Asesoría Personalizada?
+            </h2>
+            <p
+                style="color: var(--color-taupe); margin-bottom: var(--spacing-md); max-width: 600px; margin-left: auto; margin-right: auto;">
+                La Dra. Lily puede recomendarte los productos perfectos para tu tipo de piel y necesidades específicas
+            </p>
+            <a href="../index.html#contacto" class="cta-button">Agenda tu Consulta</a>
         </div>
     </section>
 
@@ -168,7 +488,7 @@
         </div>
     </footer>
 
-    <script type="module" src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
