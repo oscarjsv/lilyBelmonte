@@ -156,7 +156,10 @@
   }
 
   .nav__link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     padding: var(--spacing-sm);
     text-align: center;
   }
@@ -246,7 +249,8 @@
   }
 
   .nav__link--has-submenu {
-    position: relative;
+    /* position: relative; already set on .nav__link */
+    padding-right: calc(var(--spacing-md) + 1.5rem); /* Make room for + */
   }
 
   .nav__link--has-submenu::after {
