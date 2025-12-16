@@ -349,6 +349,19 @@
   margin-bottom: var(--spacing-sm);
 }
 
+.footer__logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer__logo-img {
+    margin: 0;
+  }
+}
+
 .footer__title {
   font-family: var(--font-secondary);
   font-size: var(--font-size-h4);

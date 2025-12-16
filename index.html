@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/main.css" />
 
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <!-- Preload critical fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
 </head>
@@ -32,7 +35,9 @@
          ======================================== -->
   <header class="header" id="header">
     <div class="header__container">
-      <a href="#home" class="header__logo">Dra. Lily</a>
+      <a href="#home" class="header__logo">
+        <img src="assets/images/logo-lily-belmonte.png" alt="Lily Belmonte" class="header__logo-img">
+      </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span class="menu-toggle__bar"></span>
@@ -295,7 +300,9 @@
       <div class="footer__grid">
         <!-- Columna 1: Logo y descripción -->
         <div class="footer__column">
-          <h3 class="footer__logo">Dra. Lily</h3>
+          <div class="footer__logo">
+            <img src="assets/images/logo-icon.png" alt="Lily Belmonte" class="footer__logo-img">
+          </div>
           <p class="footer__text">
             Clínica de estética y bienestar. Belleza auténtica.
           </p>
@@ -324,11 +331,23 @@
         <!-- Columna 4: Redes -->
         <div class="footer__column">
           <h4 class="footer__title">Síguenos</h4>
-          <!-- Social icons (same as before) -->
           <div class="footer__social">
-            <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
-              class="footer__social-link">Instagram</a>
+            <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@dralilybelmonte" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCZVRknjdzEKI26Ep6D0Sz8w" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/DraLilyBelmonte/" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </div>
         </div>
       </div>

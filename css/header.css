@@ -32,10 +32,30 @@
   color: var(--color-negro);
   text-decoration: none;
   transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
 }
 
 .header__logo:hover {
   color: var(--color-naranja);
+}
+
+/* Logo image styling */
+.header__logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
+  transition: opacity var(--transition-fast);
+}
+
+.header__logo:hover .header__logo-img {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .header__logo-img {
+    height: 35px;
+  }
 }
 
 /* Navigation */
