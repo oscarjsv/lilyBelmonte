@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alta Estética Facial | Dra. Lily</title>
+  <title>Alta Estética Facial | 11 Tratamientos Premium | Dra. Lily Belmonte</title>
   <meta name="description"
-    content="Tratamientos faciales de alta estética con Toxina Botulínica, Radiesse y Exosomas. Armonización y rejuvenecimiento facial con la Dra. Lily." />
+    content="Descubre nuestros 11 tratamientos faciales de alta estética: Toxina Botulínica, Radiesse, Sculptra, Exosomas y más. Resultados visibles desde la primera sesión." />
 
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/variables.css" />
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/header.css" />
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/treatments.css" />
 </head>
 
 <body class="internal-page">
@@ -48,173 +49,205 @@
     </div>
   </header>
 
-  <!-- Page Header with Image -->
-  <section class="page-header">
-    <!-- Background Image -->
-    <img src="../assets/images/headers/header-facial.jpg" alt="Alta Estética Facial" />
+  <!-- Enhanced Page Header -->
+  <section class="page-header page-header--enhanced">
+    <img src="../assets/images/headers/header-facial.jpg" alt="Alta Estética Facial" class="page-header__image" />
+    <div class="page-header__overlay"></div>
 
-    <!-- Overlay -->
-    <!-- Overlay -->
-    <div></div>
-
-    <!-- Content -->
-    <!-- Content -->
-    <div class="section__container">
-      <h1 class="section__title" style="color: var(--color-blanco); text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Alta
-        Estética Facial</h1>
-      <p class="section__subtitle" style="color: var(--color-blanco); max-width: 600px; margin: 0 auto;">
+    <div class="page-header__content">
+      <h1 class="page-header__title">Alta Estética Facial</h1>
+      <p class="page-header__subtitle">
         Tratamientos personalizados que realzan tu belleza natural con resultados visibles y duraderos
       </p>
     </div>
   </section>
 
-  <!-- Breadcrumbs -->
-  <div class="breadcrumbs">
+  <!-- Enhanced Breadcrumbs -->
+  <div class="breadcrumbs breadcrumbs--enhanced">
     <div class="section__container">
-      <a href="../index.html">Inicio</a>
-      <span>/</span>
-      <a href="../index.html#servicios">Tratamientos</a>
-      <span>/</span>
-      <span>Facial</span>
+      <nav class="breadcrumbs__list" aria-label="Breadcrumb">
+        <div class="breadcrumbs__item">
+          <a href="../index.html" class="breadcrumbs__link">Inicio</a>
+          <span class="breadcrumbs__separator">›</span>
+        </div>
+        <div class="breadcrumbs__item">
+          <a href="../index.html#servicios" class="breadcrumbs__link">Tratamientos</a>
+          <span class="breadcrumbs__separator">›</span>
+        </div>
+        <div class="breadcrumbs__item">
+          <span style="color: var(--color-negro); font-weight: 600;">Facial</span>
+        </div>
+      </nav>
     </div>
   </div>
 
-  <!-- Content Section -->
+  <!-- Category Filters -->
+  <div class="filters">
+    <div class="filters__container">
+      <div class="filters__list">
+        <button class="filter-pill is-active" data-category="all">
+          Todos <span class="filter-pill__count">11</span>
+        </button>
+        <button class="filter-pill" data-category="anti-edad">
+          Anti-Edad <span class="filter-pill__count">4</span>
+        </button>
+        <button class="filter-pill" data-category="volumen">
+          Volumen <span class="filter-pill__count">3</span>
+        </button>
+        <button class="filter-pill" data-category="renovacion">
+          Renovación <span class="filter-pill__count">4</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
+  <!-- Treatment Grid Section -->
   <section class="section section--tight-top">
     <div class="section__container">
+      <div class="treatment-grid treatment-grid--enhanced">
 
-      <!-- Treatment Cards Grid -->
-      <div class="treatment-grid">
-
-        <!-- Tratamiento 1 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 1: Dermo-Higiene -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="renovacion"
           style="background-image: url('../assets/images/treatments/facial/dermo-higiene.jpg');">
-          <div class="treatment-card__icon">🧼</div>
-          <h2 class="treatment-card__title">Dermo Higiene Facial</h2>
+          <span class="treatment-card__badge">Renovación</span>
+          <h2 class="treatment-card__title">Dermo-Higiene Facial</h2>
           <p class="treatment-card__description">
-            Limpieza profunda y purificación de la piel. Elimina impurezas y prepara el rostro para tratamientos
-            posteriores.
+            Limpieza profunda para pieles grasas, mixtas y con tendencia al acné.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 2 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 2: Toxina Botulínica -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="anti-edad"
           style="background-image: url('../assets/images/treatments/facial/toxina-botulinica.jpg');">
-          <div class="treatment-card__icon">💉</div>
+          <span class="treatment-card__badge">Anti-Edad</span>
           <h2 class="treatment-card__title">Toxina Botulínica</h2>
           <p class="treatment-card__description">
-            Tratamiento para suavizar líneas de expresión y prevenir arrugas. Resultados naturales que mantienen la
-            expresividad facial.
+            Suaviza líneas de expresión y previene arrugas con resultados naturales.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 3 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 3: Radiesse -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="volumen"
           style="background-image: url('../assets/images/treatments/facial/radiesse.jpg');">
-          <div class="treatment-card__icon">💎</div>
+          <span class="treatment-card__badge">Volumen</span>
           <h2 class="treatment-card__title">Radiesse</h2>
           <p class="treatment-card__description">
-            Relleno dérmico que estimula la producción natural de colágeno. Ideal para restaurar volumen y contornear el
-            rostro.
+            Estimula colágeno y restaura volumen facial de forma natural.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 4 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 4: Sculptra -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="volumen"
           style="background-image: url('../assets/images/treatments/facial/sculptra.jpg');">
-          <div class="treatment-card__icon">✨</div>
+          <span class="treatment-card__badge">Volumen</span>
           <h2 class="treatment-card__title">Sculptra</h2>
           <p class="treatment-card__description">
-            Bioestimulador de colágeno para rejuvenecimiento gradual y natural. Resultados duraderos que mejoran con el
-            tiempo.
+            Bioestimulador de colágeno para rejuvenecimiento gradual y duradero.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 5 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 5: Harmonyca -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="volumen"
           style="background-image: url('../assets/images/treatments/facial/harmonyca.jpg');">
-          <div class="treatment-card__icon">🌟</div>
+          <span class="treatment-card__badge">Volumen</span>
           <h2 class="treatment-card__title">Harmonyca</h2>
           <p class="treatment-card__description">
-            Relleno híbrido que combina ácido hialurónico con hidroxiapatita de calcio. Lifting inmediato y estimulación
-            de colágeno.
+            Relleno híbrido que combina volumen inmediato con bioestimulación.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 6 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 6: Exosomas -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="renovacion"
           style="background-image: url('../assets/images/treatments/facial/exosomas.jpg');">
-          <div class="treatment-card__icon">🔬</div>
+          <span class="treatment-card__badge">Renovación</span>
           <h2 class="treatment-card__title">Exosomas</h2>
           <p class="treatment-card__description">
-            Tecnología de vanguardia en regeneración celular. Rejuvenecimiento profundo y reparación de la piel a nivel
-            celular.
+            Tecnología de vanguardia para regeneración celular profunda.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 7 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 7: Esperma de Salmón -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="renovacion"
           style="background-image: url('../assets/images/treatments/facial/esperma-salmon.jpg');">
-          <div class="treatment-card__icon">🐟</div>
+          <span class="treatment-card__badge">Renovación</span>
           <h2 class="treatment-card__title">Esperma de Salmón</h2>
           <p class="treatment-card__description">
-            Biorevitalización con polinucleótidos para hidratación profunda y regeneración celular. Mejora la textura y
-            luminosidad.
+            Polinucleótidos que reparan y revitalizan la piel en profundidad.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 8 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 8: Sunekos -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="anti-edad"
           style="background-image: url('../assets/images/treatments/facial/sunekos.jpg');">
-          <div class="treatment-card__icon">💧</div>
+          <span class="treatment-card__badge">Anti-Edad</span>
           <h2 class="treatment-card__title">Sunekos</h2>
           <p class="treatment-card__description">
-            Tratamiento biorevitalizante que estimula colágeno y elastina. Ideal para ojeras, arrugas finas y flacidez.
+            Regenera la matriz extracelular para piel más firme y luminosa.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 9 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 9: Prophilo -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="anti-edad"
           style="background-image: url('../assets/images/treatments/facial/prophilo.jpg');">
-          <div class="treatment-card__icon">💫</div>
+          <span class="treatment-card__badge">Anti-Edad</span>
           <h2 class="treatment-card__title">Prophilo</h2>
           <p class="treatment-card__description">
-            Ácido hialurónico de alta concentración para hidratación y bioestimulación. Efecto lifting sin volumen.
+            Ácido hialurónico de alta concentración para hidratación extrema.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 10 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 10: Peeling -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="renovacion"
           style="background-image: url('../assets/images/treatments/facial/peeling.jpg');">
-          <div class="treatment-card__icon">🍃</div>
-          <h2 class="treatment-card__title">Peeling</h2>
+          <span class="treatment-card__badge">Renovación</span>
+          <h2 class="treatment-card__title">Peeling Químico</h2>
           <p class="treatment-card__description">
-            Exfoliación química para renovación celular. Mejora manchas, textura y luminosidad de la piel.
+            Exfoliación controlada para renovar y unificar el tono de la piel.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
-        <!-- Tratamiento 11 -->
-        <article class="treatment-card treatment-card--with-image"
+        <!-- Tratamiento 11: Enzimas -->
+        <article class="treatment-card treatment-card--with-image treatment-card--premium" data-category="anti-edad"
           style="background-image: url('../assets/images/treatments/facial/enzimas.jpg');">
-          <div class="treatment-card__icon">⚗️</div>
-          <h2 class="treatment-card__title">Enzimas</h2>
+          <span class="treatment-card__badge">Anti-Edad</span>
+          <h2 class="treatment-card__title">Enzimas Reductoras</h2>
           <p class="treatment-card__description">
-            Tratamiento enzimático para reducción de grasa localizada facial. Resultados naturales sin cirugía.
+            Tratamiento enzimático para reducir grasa localizada en rostro.
           </p>
+          <button class="treatment-card__cta">Ver Detalles</button>
         </article>
 
       </div>
 
-
-      <!-- CTA -->
-      <div style="text-align: center; margin-top: var(--spacing-xl);">
-        <a href="../index.html#contacto" class="cta-button">
-          Agenda tu consulta
-        </a>
+      <!-- CTA Section -->
+      <div class="text-center mt-xl">
+        <h2
+          style="font-family: var(--font-primary); font-size: 2rem; margin-bottom: var(--spacing-md); color: var(--color-negro);">
+          ¿Lista para Transformar tu Piel?
+        </h2>
+        <p
+          style="color: var(--color-taupe); margin-bottom: var(--spacing-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+          Agenda una consulta personalizada y descubre el tratamiento perfecto para ti
+        </p>
+        <a href="contacto.html" class="cta-button">Agenda tu Consulta Gratuita</a>
       </div>
     </div>
   </section>
+
+  <!-- Sticky CTA (Mobile) -->
+  <div class="sticky-cta">
+    <button class="sticky-cta__button">📞 Agenda tu Consulta</button>
+  </div>
 
   <!-- Footer -->
   <footer class="footer" id="contacto">
@@ -248,6 +281,7 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/treatments.js"></script>
 </body>
 
 </html>
