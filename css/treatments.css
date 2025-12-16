@@ -108,9 +108,9 @@
 
 .breadcrumbs__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-xs);
-  flex-wrap: wrap;
 }
 
 .breadcrumbs__item {
@@ -406,6 +406,8 @@
   z-index: 3;
   transition: all 0.4s var(--ease-out-expo);
   box-shadow: 0 4px 12px rgba(220, 88, 42, 0.4);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .treatment-card--premium:hover .treatment-card__cta {
@@ -430,10 +432,13 @@
   right: 0;
   padding: var(--spacing-md);
   background: var(--color-blanco);
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
-  z-index: var(--z-sticky);
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(100%);
   transition: transform 0.4s var(--ease-out-expo);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sticky-cta.is-visible {
@@ -441,8 +446,7 @@
 }
 
 .sticky-cta__button {
-  width: 100%;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
   background: var(--color-naranja);
   color: var(--color-blanco);
   border: none;
@@ -450,10 +454,8 @@
   font-family: var(--font-secondary);
   font-size: 1rem;
   font-weight: var(--font-weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(220, 88, 42, 0.3);
+  box-shadow: 0 4px 12px rgba(220, 88, 42, 0.4);
   transition: all 0.3s var(--ease-smooth);
 }
 
