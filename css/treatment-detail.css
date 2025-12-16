@@ -171,6 +171,18 @@
   padding: var(--spacing-lg) 0;
 }
 
+.detail-section .section__container {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .detail-section .section__container {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
+}
+
 .detail-section--alt {
   background: var(--color-cream);
 }
