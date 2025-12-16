@@ -156,10 +156,7 @@
   }
 
   .nav__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    display: block;
     padding: var(--spacing-sm);
     text-align: center;
   }
@@ -239,27 +236,82 @@
 @media (max-width: 767px) {
   .nav__dropdown {
     display: none;
-    background-color: rgba(0, 0, 0, 0.03);
-    margin-top: 0.5rem;
-    padding-left: 1rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(199, 169, 146, 0.08),
+      rgba(199, 169, 146, 0.04)
+    );
+    margin: var(--spacing-xs) 0;
+    padding: var(--spacing-xs) 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height var(--transition-normal) var(--ease-smooth),
+      opacity var(--transition-normal) var(--ease-smooth),
+      margin var(--transition-normal) var(--ease-smooth);
   }
 
   .nav__item--active .nav__dropdown {
     display: block;
+    max-height: 400px;
+    opacity: 1;
   }
 
+  .nav__dropdown-link {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--color-taupe);
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-regular);
+    transition: all var(--transition-fast);
+    border-radius: var(--radius-sm);
+    margin: 2px var(--spacing-xs);
+    text-align: center;
+  }
+
+  .nav__dropdown-link:hover {
+    background-color: rgba(199, 169, 146, 0.15);
+    color: var(--color-negro);
+    padding-left: calc(var(--spacing-sm) + 4px);
+    font-weight: var(--font-weight-medium);
+  }
+
+  /* Make expandable menu items more obvious */
   .nav__link--has-submenu {
-    /* position: relative; already set on .nav__link */
-    padding-right: calc(var(--spacing-md) + 1.5rem); /* Make room for + */
+    position: relative;
+    background: linear-gradient(90deg, rgba(199, 169, 146, 0.08), transparent);
+    transition: all var(--transition-fast);
   }
 
+  .nav__link--has-submenu:hover {
+    background: linear-gradient(90deg, rgba(199, 169, 146, 0.12), transparent);
+  }
+
+  /* Chevron indicator - more obvious than + */
   .nav__link--has-submenu::after {
-    content: "+";
-    position: absolute;
-    right: var(--spacing-md);
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.25rem;
-    font-weight: 300;
+    content: "›";
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-beige);
+    transition: transform var(--transition-normal) var(--ease-smooth),
+      color var(--transition-fast);
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .nav__item--active .nav__link--has-submenu::after {
+    content: "›";
+    color: var(--color-naranja);
+    transform: rotate(90deg);
+  }
+
+  /* Highlight active parent item */
+  .nav__item--active > .nav__link--has-submenu {
+    color: var(--color-naranja);
+    font-weight: var(--font-weight-medium);
+    background: linear-gradient(90deg, rgba(220, 88, 42, 0.1), transparent);
   }
 }

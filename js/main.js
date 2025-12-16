@@ -11,8 +11,37 @@ const initMobileMenu = () => {
       menuToggle.classList.toggle("menu-toggle--active");
     });
 
-    // Close menu when clicking on a link
-    const navLinks = nav.querySelectorAll("a");
+    // Mobile submenu toggle - must be registered BEFORE general link handlers
+    const submenuLinks = nav.querySelectorAll(".nav__link--has-submenu");
+    console.log(`Found ${submenuLinks.length} submenu links`);
+
+    submenuLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        // Only prevent default on mobile when menu is open
+        if (window.innerWidth <= 767 && nav.classList.contains("nav--open")) {
+          e.preventDefault();
+          e.stopPropagation(); // Important: prevents event from reaching other handlers
+
+          const parentItem = link.closest(".nav__item");
+          const wasActive = parentItem.classList.contains("nav__item--active");
+
+          // Close all other dropdowns
+          nav.querySelectorAll(".nav__item--active").forEach((item) => {
+            if (item !== parentItem) {
+              item.classList.remove("nav__item--active");
+            }
+          });
+
+          // Toggle current dropdown
+          parentItem.classList.toggle("nav__item--active");
+
+          console.log(`Submenu toggled: ${wasActive ? "closed" : "opened"}`);
+        }
+      });
+    });
+
+    // Close menu when clicking on a link (but NOT submenu toggle links)
+    const navLinks = nav.querySelectorAll("a:not(.nav__link--has-submenu)");
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         nav.classList.remove("nav--open");
