@@ -22,7 +22,7 @@
     <header class="header" id="header">
         <div class="header__container">
             <a href="../index.html" class="header__logo">Dra. Lily</a>
-            <button class="menu-toggle" id="menu Toggle" aria-label="Toggle menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span class="menu-toggle__bar"></span>
                 <span class="menu-toggle__bar"></span>
                 <span class="menu-toggle__bar"></span>
@@ -82,112 +82,36 @@
         </div>
     </div>
 
-    <!-- Informative Content Section -->
+    <!-- Treatment Grid Section - Featured Layout (No Filters) -->
     <section class="section section--tight-top">
         <div class="section__container">
+            <div class="treatment-grid treatment-grid--featured">
 
-            <!-- Introduction Text -->
-            <div style="max-width: 900px; margin: 0 auto var(--spacing-2xl) auto;">
-                <h2
-                    style="font-family: var(--font-primary); font-size: 2.5rem; text-align: center; margin-bottom: var(--spacing-lg); color: var(--color-negro);">
-                    ¿Qué es la Medicina Biorreguladora?
-                </h2>
-                <p
-                    style="font-size: 1.125rem; line-height: 1.8; color: var(--color-taupe); text-align: center; margin-bottom: var(--spacing-xl);">
-                    La medicina biorreguladora es un enfoque terapéutico innovador que trabaja en armonía con los
-                    sistemas naturales del cuerpo para restaurar el equilibrio y promover la salud integral. A través de
-                    tratamientos personalizados, activamos los mecanismos innatos de autorregulación de tu organismo,
-                    permitiendo que tu cuerpo recupere su estado óptimo de bienestar.
-                </p>
+                <!-- Tratamiento 1: Detoxificación Celular -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    style="background-image: url('../assets/images/treatments/bio/detoxificacion.jpg');">
+                    <span class="treatment-card__badge">Detoxificación</span>
+                    <h2 class="treatment-card__title">Detoxificación Celular</h2>
+                    <p class="treatment-card__description">
+                        Eliminación de toxinas acumuladas para mejorar la función celular, la vitalidad y la luminosidad
+                        de la piel desde el interior.
+                    </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
+                </article>
+
+                <!-- Tratamiento 2: Inmunomodulación -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    style="background-image: url('../assets/images/treatments/bio/inmunomodulacion.jpg');">
+                    <span class="treatment-card__badge">Inmunidad</span>
+                    <h2 class="treatment-card__title">Inmunomodulación</h2>
+                    <p class="treatment-card__description">
+                        Refuerzo del sistema inmunológico para prevenir el envejecimiento prematuro y mejorar la salud
+                        general y bienestar integral.
+                    </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
+                </article>
+
             </div>
-
-            <!-- Approach Section -->
-            <div style="max-width: 900px; margin: 0 auto var(--spacing-2xl) auto;">
-                <h3
-                    style="font-family: var(--font-primary); font-size: 1.75rem; margin-bottom: var(--spacing-lg); color: var(--color-negro); text-align: center;">
-                    Nuestro Enfoque Terapéutico
-                </h3>
-                <div style="display: grid; grid-template-columns: 1fr; gap: var(--spacing-lg);">
-                    <div style="border-left: 3px solid var(--color-soft); padding-left: var(--spacing-md);">
-                        <h4
-                            style="font-family: var(--font-primary); font-size: 1.125rem; margin-bottom: var(--spacing-sm); color: var(--color-negro);">
-                            Detoxificación Celular</h4>
-                        <p style="color: var(--color-taupe); line-height: 1.7;">
-                            Facilitamos la eliminación de toxinas acumuladas en el organismo, mejorando la función
-                            celular, aumentando la vitalidad y promoviendo una piel más luminosa desde el interior.
-                        </p>
-                    </div>
-                    <div style="border-left: 3px solid var(--color-soft); padding-left: var(--spacing-md);">
-                        <h4
-                            style="font-family: var(--font-primary); font-size: 1.125rem; margin-bottom: var(--spacing-sm); color: var(--color-negro);">
-                            Modulación Inmunológica</h4>
-                        <p style="color: var(--color-taupe); line-height: 1.7;">
-                            Fortalecemos el sistema inmunológico de manera equilibrada, previniendo el envejecimiento
-                            prematuro y mejorando la salud general y el bienestar integral.
-                        </p>
-                    </div>
-                    <div style="border-left: 3px solid var(--color-soft); padding-left: var(--spacing-md);">
-                        <h4
-                            style="font-family: var(--font-primary); font-size: 1.125rem; margin-bottom: var(--spacing-sm); color: var(--color-negro);">
-                            Equilibrio Hormonal</h4>
-                        <p style="color: var(--color-taupe); line-height: 1.7;">
-                            Restauramos el equilibrio hormonal natural, mejorando la calidad de vida, el estado de
-                            ánimo, la energía y reflejando estos beneficios en tu apariencia.
-                        </p>
-                    </div>
-                    <div style="border-left: 3px solid var(--color-soft); padding-left: var(--spacing-md);">
-                        <h4
-                            style="font-family: var(--font-primary); font-size: 1.125rem; margin-bottom: var(--spacing-sm); color: var(--color-negro);">
-                            Regeneración Tisular</h4>
-                        <p style="color: var(--color-taupe); line-height: 1.7;">
-                            Estimulamos los procesos naturales de regeneración del cuerpo, promoviendo la reparación de
-                            tejidos y el rejuvenecimiento desde el nivel celular.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Applications Section -->
-            <div
-                style="background: var(--color-crema); padding: var(--spacing-2xl); border-radius: 12px; max-width: 900px; margin: 0 auto var(--spacing-2xl) auto;">
-                <h3
-                    style="font-family: var(--font-primary); font-size: 1.75rem; margin-bottom: var(--spacing-lg); color: var(--color-negro); text-align: center;">
-                    Aplicaciones Principales
-                </h3>
-                <ul style="list-style: none; padding: 0; display: grid; gap: var(--spacing-md);">
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Prevención y tratamiento del
-                            envejecimiento</span>
-                    </li>
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Mejora de la calidad de la piel y
-                            luminosidad</span>
-                    </li>
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Fortalecimiento del sistema
-                            inmunológico</span>
-                    </li>
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Reducción del estrés y mejora del
-                            bienestar emocional</span>
-                    </li>
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Optimización de la energía y
-                            vitalidad</span>
-                    </li>
-                    <li style="display: flex; gap: var(--spacing-sm); align-items: start;">
-                        <span style="color: var(--color-soft); font-size: 1.5rem;">✓</span>
-                        <span style="color: var(--color-taupe); line-height: 1.7;">Apoyo en procesos de recuperación y
-                            convalecencia</span>
-                    </li>
-                </ul>
-            </div>
-
 
             <!-- Benefits Section (Extra content for pages with few treatments) -->
             <div class="benefits" style="margin-top: var(--spacing-2xl);">

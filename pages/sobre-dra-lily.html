@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre la Dra. Lily | Especialista en Estética</title>
+    <title>Sobre Nosotros | Dra. Lily Belmonte & Equipo</title>
     <meta name="description"
-        content="Conoce a la Dra. Lily, especialista en medicina estética con más de 15 años de experiencia en tratamientos faciales y corporales." />
+        content="Conoce a la Dra. Lily y su equipo de especialistas en medicina estética. Más de 15 años de experiencia en tratamientos faciales y corporales." />
 
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/treatments.css" />
 </head>
 
 <body class="internal-page">
@@ -49,67 +50,249 @@
         </div>
     </header>
 
-    <!-- Page Header with Image -->
-    <section class="page-header">
-        <img src="../assets/images/team/dra-lily.jpg" alt="Dra. Lily" />
-        <div></div>
-        <div class="section__container">
-            <h1 class="section__title" style="color: var(--color-blanco); text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Dra.
-                Lily</h1>
-            <p class="section__subtitle" style="color: var(--color-blanco); max-width: 600px; margin: 0 auto;">
-                Especialista en Medicina Estética y Bienestar
+    <!-- Hero Section -->
+    <section class="page-header--enhanced">
+        <img src="../assets/images/team/dra-lily.jpg" alt="Dra. Lily Belmonte" class="page-header__image" />
+        <div class="page-header__overlay"></div>
+        <div class="page-header__content">
+            <span class="page-header__category">Nosotros</span>
+            <h1 class="page-header__title">Belleza Auténtica, Ciencia con Alma</h1>
+            <p class="page-header__subtitle">
+                Descubre al equipo que transforma la medicina estética en arte
             </p>
         </div>
     </section>
 
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs--enhanced">
+        <div class="section__container">
+            <nav class="breadcrumbs__list">
+                <span class="breadcrumbs__item">
+                    <a href="../index.html" class="breadcrumbs__link">Inicio</a>
+                </span>
+                <span class="breadcrumbs__separator">›</span>
+                <span class="breadcrumbs__item">Nosotros</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Filosofía Quote -->
+    <section class="section"
+        style="background: var(--color-cream); text-align: center; padding: var(--spacing-2xl) var(--spacing-md);">
+        <div class="section__container">
+            <blockquote style="max-width: 800px; margin: 0 auto;">
+                <p
+                    style="font-family: var(--font-primary); font-size: clamp(1.5rem, 4vw, 2.5rem); color: var(--color-negro); line-height: 1.4; margin-bottom: var(--spacing-md); font-style: italic;">
+                    "La belleza auténtica nace cuando la ciencia médica abraza tu esencia única"
+                </p>
+                <footer
+                    style="font-family: var(--font-secondary); font-size: 1.125rem; color: var(--color-taupe); font-weight: var(--font-weight-medium);">
+                    — Dra. Lily Belmonte
+                </footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Dra. Lily Bio -->
     <section class="section">
         <div class="section__container">
-
-            <div style="max-width: 800px; margin: var(--spacing-xl) auto;">
-
-                <div style="text-align: center; margin-bottom: var(--spacing-xl);">
-                    <img src="../assets/images/team/dra-lily.jpg" alt="Dra. Lily"
-                        style="width: 300px; height: 375px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); margin: 0 auto;" />
+            <div class="dr-lily__container">
+                <!-- Foto -->
+                <div class="dr-lily__image-wrapper">
+                    <img src="../assets/images/team/dra-lily.jpg" alt="Dra. Lily - Especialista en Estética"
+                        class="dr-lily__image" loading="lazy" />
                 </div>
 
-                <div style="line-height: var(--line-height-relaxed); color: var(--color-taupe);">
-                    <h2
-                        style="font-family: var(--font-primary); font-size: var(--font-size-h3); margin-bottom: var(--spacing-md); color: var(--color-negro);">
-                        Trayectoria Profesional
-                    </h2>
+                <!-- Contenido -->
+                <div class="dr-lily__content">
+                    <h2 class="dr-lily__title">Dra. Lily Belmonte</h2>
 
-                    <p style="margin-bottom: var(--spacing-md);">
-                        La Dra. Lily cuenta con más de 15 años de experiencia en medicina estética. Especializada en
-                        tratamientos faciales y corporales de vanguardia, combina técnica, arte y ciencia para realzar
-                        la belleza natural de cada paciente con resultados excepcionales.
+                    <p class="dr-lily__bio">
+                        Más de 15 años de experiencia en medicina estética. Especializada en tratamientos faciales y
+                        corporales de vanguardia, combina técnica, arte y ciencia para realzar la belleza natural de
+                        cada paciente con resultados excepcionales.
                     </p>
 
-                    <p style="margin-bottom: var(--spacing-md);">
+                    <p class="dr-lily__bio">
                         Su filosofía se basa en el concepto "Somos nuestra piel" - entendiendo que la belleza auténtica
                         y la dignidad van de la mano con tratamientos personalizados y respetuosos con la naturaleza de
                         cada persona.
                     </p>
 
-                    <h2
-                        style="font-family: var(--font-primary); font-size: var(--font-size-h3); margin: var(--spacing-lg) 0 var(--spacing-md); color: var(--color-negro);">
+                    <h3
+                        style="font-family: var(--font-primary); font-size: var(--font-size-h4); margin: var(--spacing-lg) 0 var(--spacing-sm); color: var(--color-negro);">
                         Especialidades
-                    </h2>
+                    </h3>
 
-                    <ul style="list-style: disc; padding-left: var(--spacing-md); margin-bottom: var(--spacing-lg);">
-                        <li style="margin-bottom: var(--spacing-xs);">Alta Estética Facial</li>
-                        <li style="margin-bottom: var(--spacing-xs);">Contorno Corporal</li>
-                        <li style="margin-bottom: var(--spacing-xs);">Tecnología Láser</li>
-                        <li style="margin-bottom: var(--spacing-xs);">Medicina Biorreguladora</li>
-                        <li style="margin-bottom: var(--spacing-xs);">Tricología y Salud Capilar</li>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--color-greige); color: var(--color-taupe);">
+                            ✓ Alta Estética Facial
+                        </li>
+                        <li
+                            style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--color-greige); color: var(--color-taupe);">
+                            ✓ Contorno Corporal
+                        </li>
+                        <li
+                            style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--color-greige); color: var(--color-taupe);">
+                            ✓ Tecnología Láser
+                        </li>
+                        <li
+                            style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--color-greige); color: var(--color-taupe);">
+                            ✓ Medicina Biorreguladora
+                        </li>
+                        <li style="padding: var(--spacing-xs) 0; color: var(--color-taupe);">
+                            ✓ Tricología y Salud Capilar
+                        </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div style="text-align: center; margin-top: var(--spacing-xl);">
-                    <a href="../index.html#contacto" class="cta-button">
-                        Agenda tu consulta
-                    </a>
+    <!-- Equipo Médico - GRID ESCALABLE -->
+    <section class="section" style="background: var(--color-gris-calido);">
+        <div class="section__container">
+            <header class="section__header">
+                <h2 class="section__title">Nuestro Equipo Médico</h2>
+                <p class="section__subtitle">
+                    Profesionales especializados comprometidos con tu belleza y bienestar
+                </p>
+            </header>
+
+            <!-- Grid Escalable: se adapta automáticamente a 1, 2, 3 o más miembros -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-xl);">
+
+                <!-- Team Member 1 - Ejemplo -->
+                <article
+                    style="background: var(--color-blanco); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s var(--ease-smooth);">
+                    <div style="aspect-ratio: 3/4; overflow: hidden; background: var(--color-greige);">
+                        <img src="../assets/images/team/dra-lily.jpg" alt="Miembro del equipo"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.4s ease;"
+                            onmouseover="this.style.filter='grayscale(0%)'"
+                            onmouseout="this.style.filter='grayscale(100%)'" />
+                    </div>
+                    <div style="padding: var(--spacing-lg);">
+                        <h3
+                            style="font-family: var(--font-primary); font-size: 1.25rem; color: var(--color-negro); margin-bottom: var(--spacing-xs);">
+                            Dra. María González
+                        </h3>
+                        <p
+                            style="font-size: 0.875rem; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">
+                            Dermatóloga
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--color-taupe); line-height: 1.6;">
+                            Especialista en tratamientos faciales y rejuvenecimiento no invasivo
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Team Member 2 - PlaceHolder (Puedes agregar más) -->
+                <article
+                    style="background: var(--color-blanco); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s var(--ease-smooth);">
+                    <div style="aspect-ratio: 3/4; overflow: hidden; background: var(--color-greige);">
+                        <img src="../assets/images/team/dra-lily.jpg" alt="Miembro del equipo"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.4s ease;"
+                            onmouseover="this.style.filter='grayscale(0%)'"
+                            onmouseout="this.style.filter='grayscale(100%)'" />
+                    </div>
+                    <div style="padding: var(--spacing-lg);">
+                        <h3
+                            style="font-family: var(--font-primary); font-size: 1.25rem; color: var(--color-negro); margin-bottom: var(--spacing-xs);">
+                            Dr. Carlos Méndez
+                        </h3>
+                        <p
+                            style="font-size: 0.875rem; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">
+                            Cirujano Estético
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--color-taupe); line-height: 1.6;">
+                            Experto en contorno corporal y técnicas de vanguardia
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Team Member 3 - PlaceHolder -->
+                <article
+                    style="background: var(--color-blanco); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s var(--ease-smooth);">
+                    <div style="aspect-ratio: 3/4; overflow: hidden; background: var(--color-greige);">
+                        <img src="../assets/images/team/dra-lily.jpg" alt="Miembro del equipo"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.4s ease;"
+                            onmouseover="this.style.filter='grayscale(0%)'"
+                            onmouseout="this.style.filter='grayscale(100%)'" />
+                    </div>
+                    <div style="padding: var(--spacing-lg);">
+                        <h3
+                            style="font-family: var(--font-primary); font-size: 1.25rem; color: var(--color-negro); margin-bottom: var(--spacing-xs);">
+                            Lic. Ana Rodríguez
+                        </h3>
+                        <p
+                            style="font-size: 0.875rem; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--spacing-sm); font-weight: var(--font-weight-semibold);">
+                            Esteticista Certificada
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--color-taupe); line-height: 1.6;">
+                            Especialista en cuidados post-tratamiento y skincare personalizado
+                        </p>
+                    </div>
+                </article>
+
+                <!-- NOTA: Agrega más <article> aquí y el grid se ajusta automáticamente -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section class="section">
+        <div class="section__container">
+            <header class="section__header">
+                <h2 class="section__title">Nuestros Valores</h2>
+            </header>
+
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">🔬</div>
+                    <h3 class="benefit-card__title">Excelencia Médica</h3>
+                    <p class="benefit-card__text">
+                        Protocolos avalados científicamente y tecnología de última generación
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">💎</div>
+                    <h3 class="benefit-card__title">Atención Personalizada</h3>
+                    <p class="benefit-card__text">
+                        Cada tratamiento diseñado específicamente para tus necesidades
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">🌟</div>
+                    <h3 class="benefit-card__title">Resultados Naturales</h3>
+                    <p class="benefit-card__text">
+                        Realzamos tu belleza auténtica sin comprometer tu esencia
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-taupe) 100%); padding: var(--spacing-2xl) var(--spacing-md); text-align: center; color: var(--color-blanco);">
+        <div class="section__container">
+            <h2
+                style="font-family: var(--font-primary); font-size: clamp(2rem, 5vw, 3rem); margin-bottom: var(--spacing-md);">
+                ¿Lista para Tu Transformación?
+            </h2>
+            <p
+                style="font-size: 1.125rem; margin-bottom: var(--spacing-xl); max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.95;">
+                Agenda una consulta personalizada con nuestro equipo de especialistas
+            </p>
+            <a href="contacto.html" class="cta-button"
+                style="background: var(--color-blanco); color: var(--color-negro);">
+                Agenda tu Consulta
+            </a>
         </div>
     </section>
 
@@ -123,18 +306,19 @@
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Contacto</h4>
-                    <p class="footer__text"><a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a></p>
-                    <p class="footer__text"><a href="mailto:contacto@dralily.com"
-                            class="footer__link">contacto@dralily.com</a></p>
+                    <p class="footer__text"><a href="tel:+573014730572" class="footer__link">+57 301 473 0572</a></p>
+                    <p class="footer__text"><a href="mailto:citasdralilybelmonte@gmail.com"
+                            class="footer__link">citasdralilybelmonte@gmail.com</a></p>
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Ubicación</h4>
-                    <p class="footer__text">Av. Principal 123<br />CDMX</p>
+                    <p class="footer__text">Cra 44 # 84 - 178<br />Barranquilla, Colombia</p>
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Síguenos</h4>
                     <div class="footer__social">
-                        <a href="https://instagram.com" class="footer__social-link">Instagram</a>
+                        <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
+                            class="footer__social-link">Instagram</a>
                     </div>
                 </div>
             </div>

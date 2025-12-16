@@ -259,18 +259,21 @@ function initComparison() {
 // INIT ALL
 // ========================================
 function initTreatmentPage() {
-  // Check if we're on a treatment page
-  const isTreatmentPage =
+  // Check if we're on a treatment LISTING page (not detail page)
+  const isTreatmentListingPage =
     document.querySelector(".page-header--enhanced") ||
     document.querySelector(".treatment-grid--enhanced");
 
-  if (!isTreatmentPage) return;
+  // Don't run on detail pages
+  const isDetailPage = document.querySelector(".treatment-hero");
+
+  if (!isTreatmentListingPage || isDetailPage) return;
 
   // Initialize all features
   initHeroParallax();
   initFilters();
   initStickyCTA();
-  initModals();
+  // initModals(); // DISABLED: All cards now link directly to detail pages
   initScrollReveal();
   initSmoothScroll();
 

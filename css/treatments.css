@@ -183,14 +183,14 @@
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   text-align: center;
-  box-shadow: 0 2px 8px var(--color-shadow);
+  box-shadow: var(--shadow-sm);
   transition: all 0.3s var(--ease-smooth);
   border: 1px solid rgba(119, 111, 101, 0.1);
 }
 
 .benefit-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px var(--color-shadow);
+  box-shadow: var(--shadow-lg);
 }
 
 .benefit-card__icon {
@@ -223,7 +223,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
 }
 
 .filters__container {
@@ -309,6 +309,31 @@
 }
 
 /* ========================================
+   FEATURED LAYOUT (For 2-4 treatments)
+   ======================================== */
+
+.treatment-grid--featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-top: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .treatment-grid--featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Featured cards are larger */
+.treatment-grid--featured .treatment-card {
+  min-height: 400px;
+}
+
+/* ========================================
    TREATMENT CARD - PREMIUM UPGRADE
    ======================================== */
 
@@ -361,7 +386,7 @@
 /* Enhanced hover */
 .treatment-card--premium:hover {
   transform: translateY(-12px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow-lg);
 }
 
 .treatment-card--premium:hover .treatment-card__image {
@@ -405,7 +430,7 @@
   opacity: 0;
   z-index: 3;
   transition: all 0.4s var(--ease-out-expo);
-  box-shadow: 0 4px 12px rgba(220, 88, 42, 0.4);
+  box-shadow: var(--shadow-md);
   text-decoration: none;
   display: inline-block;
 }
@@ -416,9 +441,10 @@
 }
 
 .treatment-card__cta:hover {
-  background: var(--color-vino);
+  background: rgba(220, 88, 42, 0.9);
   transform: translateX(-50%) translateY(-4px);
-  box-shadow: 0 8px 20px rgba(220, 88, 42, 0.5);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-blanco);
 }
 
 /* ========================================
@@ -432,7 +458,7 @@
   right: 0;
   padding: var(--spacing-md);
   background: var(--color-blanco);
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-md);
   transform: translateY(100%);
   transition: transform 0.4s var(--ease-out-expo);
   z-index: 999;
@@ -455,7 +481,7 @@
   font-size: 1rem;
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(220, 88, 42, 0.4);
+  box-shadow: var(--shadow-md);
   transition: all 0.3s var(--ease-smooth);
 }
 
@@ -540,7 +566,7 @@
   overflow-y: auto;
   transform: scale(0.9) translateY(20px);
   transition: transform 0.4s var(--ease-out-expo);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-lg);
 }
 
 .modal.is-open .modal__content {

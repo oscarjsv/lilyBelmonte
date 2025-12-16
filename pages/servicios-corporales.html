@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contorno Corporal | Dra. Lily</title>
+    <title>Alta Estética Corporal | 6 Tratamientos Premium | Dra. Lily Belmonte</title>
     <meta name="description"
-        content="Tratamientos corporales con tecnología enzimática e Indiba. Protocolos de firmeza y reducción no invasivos." />
+        content="Descubre nuestros 6 tratamientos corporales premium: Indiba, Enzimas, Mesoterapia y limpiezas especializadas. Transform tu silueta." />
 
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/treatments.css?v=2.0" />
 </head>
 
 <body class="internal-page">
@@ -49,117 +50,189 @@
         </div>
     </header>
 
-    <!-- Page Header with Image -->
-    <section class="page-header">
-        <!-- Background Image -->
-        <img src="../assets/images/headers/header-corporal.jpg" alt="Contorno Corporal" />
+    <!-- Enhanced Page Header -->
+    <section class="page-header page-header--enhanced">
+        <img src="../assets/images/headers/header-corporal.jpg" alt="Alta Estética Corporal"
+            class="page-header__image" />
+        <div class="page-header__overlay"></div>
 
-        <!-- Overlay -->
-        <div></div>
-
-        <!-- Content -->
-        <div class="section__container">
-            <h1 class="section__title" style="color: var(--color-blanco); text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-                Contorno Corporal</h1>
-            <p class="section__subtitle" style="color: var(--color-blanco); max-width: 600px; margin: 0 auto;">
-                Moldea tu silueta con tratamientos no invasivos que transforman tu cuerpo de manera natural
+        <div class="page-header__content">
+            <h1 class="page-header__title">Alta Estética Corporal</h1>
+            <p class="page-header__subtitle">
+                Tratamientos especializados para moldear, tonificar y realzar la belleza de tu cuerpo
             </p>
         </div>
     </section>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
+    <!-- Enhanced Breadcrumbs -->
+    <div class="breadcrumbs breadcrumbs--enhanced">
         <div class="section__container">
-            <a href="../index.html">Inicio</a>
-            <span>/</span>
-            <a href="../index.html#servicios">Tratamientos</a>
-            <span>/</span>
-            <span>Corporal</span>
+            <nav class="breadcrumbs__list" aria-label="Breadcrumb">
+                <div class="breadcrumbs__item">
+                    <a href="../index.html" class="breadcrumbs__link">Inicio</a>
+                    <span class="breadcrumbs__separator">›</span>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="../index.html#servicios" class="breadcrumbs__link">Tratamientos</a>
+                    <span class="breadcrumbs__separator">›</span>
+                </div>
+                <div class="breadcrumbs__item">
+                    <span style="color: var(--color-negro); font-weight: 600;">Corporal</span>
+                </div>
+            </nav>
         </div>
     </div>
 
+    <!-- Category Filters -->
+    <div class="filters">
+        <div class="filters__container">
+            <div class="filters__list">
+                <button class="filter-pill is-active" data-category="all">
+                    Todos <span class="filter-pill__count">6</span>
+                </button>
+                <button class="filter-pill" data-category="firmeza">
+                    Firmeza <span class="filter-pill__count">1</span>
+                </button>
+                <button class="filter-pill" data-category="reduccion">
+                    Reducción <span class="filter-pill__count">2</span>
+                </button>
+                <button class="filter-pill" data-category="limpieza">
+                    Limpieza <span class="filter-pill__count">3</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Treatment Grid Section -->
     <section class="section section--tight-top">
         <div class="section__container">
+            <div class="treatment-grid treatment-grid--enhanced">
 
-            <!-- Treatment Cards Grid -->
-            <div class="treatment-grid">
-
-                <!-- Tratamiento 1 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 1: Indiba -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="firmeza"
                     style="background-image: url('../assets/images/treatments/corporal/indiba.jpg');">
-                    <div class="treatment-card__icon">⚡</div>
+                    <span class="treatment-card__badge">Firmeza</span>
                     <h2 class="treatment-card__title">Indiba</h2>
                     <p class="treatment-card__description">
-                        Radiofrecuencia de última generación para firmeza y tonificación. Estimula la producción de
-                        colágeno y elastina.
+                        Radiofrecuencia de última generación para firmeza y tonificación corporal.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 2 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 2: Enzimas -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="reduccion"
                     style="background-image: url('../assets/images/treatments/corporal/enzimas.jpg');">
-                    <div class="treatment-card__icon">⚗️</div>
+                    <span class="treatment-card__badge">Reducción</span>
                     <h2 class="treatment-card__title">Enzimas</h2>
                     <p class="treatment-card__description">
-                        Tratamiento avanzado para reducción de grasa localizada. Resultados visibles sin cirugía ni
-                        tiempo de recuperación.
+                        Tratamiento avanzado para reducción de grasa localizada sin cirugía.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 3 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 3: Mesoterapia -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="reduccion"
                     style="background-image: url('../assets/images/treatments/corporal/mesoterapia.jpg');">
-                    <div class="treatment-card__icon">💉</div>
+                    <span class="treatment-card__badge">Reducción</span>
                     <h2 class="treatment-card__title">Mesoterapia</h2>
                     <p class="treatment-card__description">
-                        Microinyecciones de principios activos para celulitis, flacidez y grasa localizada. Tratamiento
-                        personalizado.
+                        Microinyecciones para celulitis, flacidez y grasa localizada.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 4 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 4: Limpieza de Espalda -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="limpieza"
                     style="background-image: url('../assets/images/treatments/corporal/limpieza-espalda.jpg');">
-                    <div class="treatment-card__icon">🧴</div>
+                    <span class="treatment-card__badge">Limpieza</span>
                     <h2 class="treatment-card__title">Limpieza de Espalda</h2>
                     <p class="treatment-card__description">
-                        Tratamiento profundo para eliminar impurezas, puntos negros y prevenir acné en la zona de
-                        espalda.
+                        Tratamiento profundo para eliminar impurezas y prevenir acné.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 5 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 5: Limpieza de Pecho -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="limpieza"
                     style="background-image: url('../assets/images/treatments/corporal/limpieza-pecho.jpg');">
-                    <div class="treatment-card__icon">🧴</div>
+                    <span class="treatment-card__badge">Limpieza</span>
                     <h2 class="treatment-card__title">Limpieza de Pecho</h2>
                     <p class="treatment-card__description">
-                        Higienización profunda de la zona del pecho para prevenir y tratar imperfecciones cutáneas.
+                        Higienización profunda de la zona del pecho para prevenir imperfecciones.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 6 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 6: Limpieza de Glúteos -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
+                    data-category="limpieza"
                     style="background-image: url('../assets/images/treatments/corporal/limpieza-gluteos.jpg');">
-                    <div class="treatment-card__icon">🧴</div>
+                    <span class="treatment-card__badge">Limpieza</span>
                     <h2 class="treatment-card__title">Limpieza de Glúteos</h2>
                     <p class="treatment-card__description">
-                        Tratamiento especializado para mejorar la textura y apariencia de la piel en la zona glútea.
+                        Tratamiento especializado para mejorar textura y apariencia de la piel.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
             </div>
 
+            <!-- CTA Section -->
+            <div class="text-center mt-xl">
+                <h2
+                    style="font-family: var(--font-primary); font-size: 2rem; margin-bottom: var(--spacing-md); color: var(--color-negro);">
+                    ¿Lista para Transform
 
-            <div style="text-align: center; margin-top: var(--spacing-xl);">
-                <a href="../index.html#contacto" class="cta-button">
-                    Agenda tu consulta
-                </a>
+                    ar tu Silueta?
+                </h2>
+                <p
+                    style="color: var(--color-taupe); margin-bottom: var(--spacing-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Agenda una consulta personalizada y descubre el tratamiento corporal perfecto para ti
+                </p>
+                <a href="contacto.html" class="cta-button">Agenda tu Consulta Gratuita</a>
             </div>
         </div>
     </section>
 
-    <script type="module" src="../js/main.js"></script>
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__logo">Dra. Lily</h3>
+                    <p class="footer__text">Clínica de estética y bienestar. Belleza auténtica.</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Contacto</h4>
+                    <p class="footer__text"><a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a></p>
+                    <p class="footer__text"><a href="mailto:contacto@dralily.com"
+                            class="footer__link">contacto@dralily.com</a>
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Ubicación</h4>
+                    <p class="footer__text">Av. Principal 123<br />CDMX</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="https://instagram.com" class="footer__social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dra. Lily. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/treatments.js"></script>
 </body>
 
 </html>

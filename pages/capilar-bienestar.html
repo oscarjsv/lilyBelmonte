@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capilar y Bienestar | Dra. Lily</title>
+    <title>Capilar y Bienestar | 4 Tratamientos Regenerativos | Dra. Lily Belmonte</title>
     <meta name="description"
-        content="Recuperación capilar y equilibrio biorregulador. Tratamientos integrales para tu cabello y bienestar general." />
+        content="Recuperación capilar con tratamientos regenerativos: Mesoterapia, Plasma Rico en Plaquetas, Exosomas y Biorevitalización. Cabello más fuerte y saludable." />
 
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/treatments.css?v=2.0" />
 </head>
 
 <body class="internal-page">
@@ -49,89 +50,137 @@
         </div>
     </header>
 
-    <!-- Page Header with Image -->
-    <section class="page-header">
-        <img src="../assets/images/headers/header-capilar.jpg" alt="Capilar y Bienestar" />
-        <div></div>
-        <div class="section__container">
-            <h1 class="section__title" style="color: var(--color-blanco); text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-                Capilar y Bienestar</h1>
-            <p class="section__subtitle" style="color: var(--color-blanco); max-width: 600px; margin: 0 auto;">
-                Tratamientos integrales que cuidan tu cabello y tu bienestar general desde el interior
+    <!-- Enhanced Page Header -->
+    <section class="page-header page-header--enhanced">
+        <img src="../assets/images/headers/header-capilar.jpg" alt="Capilar y Bienestar" class="page-header__image" />
+        <div class="page-header__overlay"></div>
+
+        <div class="page-header__content">
+            <h1 class="page-header__title">Capilar y Bienestar</h1>
+            <p class="page-header__subtitle">
+                Tratamientos regenerativos que cuidan tu cabello desde la raíz para resultados visibles y duraderos
             </p>
         </div>
     </section>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
+    <!-- Enhanced Breadcrumbs -->
+    <div class="breadcrumbs breadcrumbs--enhanced">
         <div class="section__container">
-            <a href="../index.html">Inicio</a>
-            <span>/</span>
-            <a href="../index.html#servicios">Tratamientos</a>
-            <span>/</span>
-            <span>Capilar</span>
+            <nav class="breadcrumbs__list" aria-label="Breadcrumb">
+                <div class="breadcrumbs__item">
+                    <a href="../index.html" class="breadcrumbs__link">Inicio</a>
+                    <span class="breadcrumbs__separator">›</span>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="../index.html#servicios" class="breadcrumbs__link">Tratamientos</a>
+                    <span class="breadcrumbs__separator">›</span>
+                </div>
+                <div class="breadcrumbs__item">
+                    <span style="color: var(--color-negro); font-weight: 600;">Capilar</span>
+                </div>
+            </nav>
         </div>
     </div>
 
+    <!-- Treatment Grid Section - Featured Layout (No Filters) -->
     <section class="section section--tight-top">
         <div class="section__container">
+            <div class="treatment-grid treatment-grid--featured">
 
-            <!-- Treatment Cards Grid -->
-            <div class="treatment-grid">
-
-                <!-- Tratamiento 1 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 1: Mesoterapia Capilar -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
                     style="background-image: url('../assets/images/treatments/capilar/mesoterapia.jpg');">
-                    <div class="treatment-card__icon">💉</div>
+                    <span class="treatment-card__badge">Estimulación</span>
                     <h2 class="treatment-card__title">Mesoterapia Capilar</h2>
                     <p class="treatment-card__description">
                         Microinyecciones de nutrientes y vitaminas directamente en el cuero cabelludo para fortalecer y
                         estimular el crecimiento.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 2 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 2: Plasma Rico en Plaquetas -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
                     style="background-image: url('../assets/images/treatments/capilar/plasma.jpg');">
-                    <div class="treatment-card__icon">🩸</div>
+                    <span class="treatment-card__badge">Regeneración</span>
                     <h2 class="treatment-card__title">Plasma Rico en Plaquetas</h2>
                     <p class="treatment-card__description">
                         Tratamiento regenerativo con factores de crecimiento propios para combatir la caída y mejorar la
                         densidad capilar.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 3 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 3: Exosomas Capilares -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
                     style="background-image: url('../assets/images/treatments/capilar/exosomas.jpg');">
-                    <div class="treatment-card__icon">🔬</div>
+                    <span class="treatment-card__badge">Regeneración</span>
                     <h2 class="treatment-card__title">Exosomas Capilares</h2>
                     <p class="treatment-card__description">
                         Tecnología avanzada de regeneración celular para revitalizar folículos pilosos y estimular
                         crecimiento de cabello nuevo.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
-                <!-- Tratamiento 4 -->
-                <article class="treatment-card treatment-card--with-image"
+                <!-- Tratamiento 4: Biorevitalización Capilar -->
+                <article class="treatment-card treatment-card--with-image treatment-card--premium"
                     style="background-image: url('../assets/images/treatments/capilar/biorevitalizacion.jpg');">
-                    <div class="treatment-card__icon">💧</div>
+                    <span class="treatment-card__badge">Nutrición</span>
                     <h2 class="treatment-card__title">Biorevitalización Capilar</h2>
                     <p class="treatment-card__description">
                         Nutrición intensiva del cuero cabelludo con ácido hialurónico y vitaminas para cabello más
                         fuerte y saludable.
                     </p>
+                    <a href="#" class="treatment-card__cta">Próximamente</a>
                 </article>
 
             </div>
 
-            <div style="text-align: center; margin-top: var(--spacing-xl);">
-                <a href="../index.html#contacto" class="cta-button">
-                    Agenda tu consulta
-                </a>
+            <!-- Benefits Section (Extra content for pages with few treatments) -->
+            <div class="benefits" style="margin-top: var(--spacing-2xl);">
+                <h2
+                    style="font-family: var(--font-primary); font-size: 2rem; text-align: center; margin-bottom: var(--spacing-xl); color: var(--color-negro);">
+                    ¿Por Qué Elegir Nuestros Tratamientos Capilares?
+                </h2>
+                <div class="benefits__grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">🔬</div>
+                        <h3 class="benefit-card__title">Tecnología Avanzada</h3>
+                        <p class="benefit-card__text">
+                            Utilizamos las técnicas más innovadoras en regeneración capilar para resultados comprobados.
+                        </p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">⚕️</div>
+                        <h3 class="benefit-card__title">Protocolos Personalizados</h3>
+                        <p class="benefit-card__text">
+                            Cada tratamiento se adapta a tu tipo de cabello y necesidades específicas.
+                        </p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">✨</div>
+                        <h3 class="benefit-card__title">Resultados Visibles</h3>
+                        <p class="benefit-card__text">
+                            Notarás mejoras en densidad, grosor y vitalidad desde las primeras sesiones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-xl">
+                <h2
+                    style="font-family: var(--font-primary); font-size: 2rem; margin-bottom: var(--spacing-md); color: var(--color-negro);">
+                    ¿Lista para Recuperar la Salud de tu Cabello?
+                </h2>
+                <p
+                    style="color: var(--color-taupe); margin-bottom: var(--spacing-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Agenda una consulta especializada y descubre el tratamiento capilar perfecto para ti
+                </p>
+                <a href="contacto.html" class="cta-button">Agenda tu Consulta Gratuita</a>
             </div>
         </div>
-
     </section>
 
     <!-- Footer -->
@@ -146,7 +195,8 @@
                     <h4 class="footer__title">Contacto</h4>
                     <p class="footer__text"><a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a></p>
                     <p class="footer__text"><a href="mailto:contacto@dralily.com"
-                            class="footer__link">contacto@dralily.com</a></p>
+                            class="footer__link">contacto@dralily.com</a>
+                    </p>
                 </div>
                 <div class="footer__column">
                     <h4 class="footer__title">Ubicación</h4>
@@ -165,7 +215,8 @@
         </div>
     </footer>
 
-    <script type="module" src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/treatments.js"></script>
 </body>
 
 </html>
