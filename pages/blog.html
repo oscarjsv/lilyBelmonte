@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Belleza, Salud y Bienestar | Dra. Lily Belmonte</title>
+    <meta name="description"
+        content="Descubre consejos expertos sobre cuidado de la piel, tratamientos estéticos y bienestar. Blog profesional de la Dra. Lily Belmonte." />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+</head>
+
+<body class="internal-page">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/images/logo-lily-belmonte.png" alt="Dra. Lily" class="header__logo-img">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="sobre-dra-lily.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item">
+                        <a href="../index.html#servicios" class="nav__link nav__link--has-submenu">Tratamientos</a>
+                        <ul class="nav__dropdown">
+                            <li><a href="servicios-faciales.html" class="nav__dropdown-link">Facial</a></li>
+                            <li><a href="servicios-corporales.html" class="nav__dropdown-link">Corporal</a></li>
+                            <li><a href="medicina-biorreguladora.html" class="nav__dropdown-link">Medicina
+                                    Biorreguladora</a></li>
+                            <li><a href="capilar-bienestar.html" class="nav__dropdown-link">Capilar</a></li>
+                            <li><a href="tecnologia-laser.html" class="nav__dropdown-link">Tecnologías</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link nav__link--active">Blog</a></li>
+                    <li class="nav__item"><a href="tienda-skinpoint.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero__overlay"></div>
+        <div class="blog-hero__content">
+            <span class="blog-hero__label">Conocimiento & Belleza</span>
+            <h1 class="blog-hero__title">Blog</h1>
+            <p class="blog-hero__subtitle">
+                Consejos expertos, tendencias y secretos de belleza por la Dra. Lily Belmonte
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <div class="blog-filters">
+        <div class="section__container">
+            <div class="blog-filters__list">
+                <button class="blog-filter-pill is-active" data-category="all">
+                    Todos <span class="count">8</span>
+                </button>
+                <button class="blog-filter-pill" data-category="skincare">
+                    Cuidado de la Piel <span class="count">3</span>
+                </button>
+                <button class="blog-filter-pill" data-category="treatments">
+                    Tratamientos <span class="count">2</span>
+                </button>
+                <button class="blog-filter-pill" data-category="wellness">
+                    Bienestar <span class="count">2</span>
+                </button>
+                <button class="blog-filter-pill" data-category="trends">
+                    Tendencias <span class="count">1</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Article -->
+    <section class="section">
+        <div class="section__container">
+            <article class="blog-featured" data-category="skincare">
+                <div class="blog-featured__image-wrapper">
+                    <img src="../assets/images/blog/featured-vitamina-c.jpg" alt="Vitamina C en Skincare"
+                        class="blog-featured__image" />
+                </div>
+                <div class="blog-featured__content">
+                    <span class="blog-featured__category">Cuidado de la Piel</span>
+                    <h2 class="blog-featured__title">
+                        El Poder de la Vitamina C: Tu Aliado Anti-Edad Definitivo
+                    </h2>
+                    <p class="blog-featured__excerpt">
+                        Descubre cómo este potente antioxidante puede transformar tu piel, combatir los signos del
+                        envejecimiento y
+                        devolverle ese brillo natural que todos anhelamos. Aprende a incorporarlo correctamente en tu
+                        rutina.
+                    </p>
+                    <div class="blog-featured__meta">
+                        <span class="blog-meta__date"><i class="far fa-calendar"></i> 15 Dic, 2025</span>
+                        <span class="blog-meta__read-time"><i class="far fa-clock"></i> 5 min lectura</span>
+                    </div>
+                    <a href="#" class="blog-featured__cta">Leer Artículo Completo</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section__container">
+            <div class="blog-grid">
+
+                <!-- Article 1 -->
+                <article class="blog-card" data-category="treatments">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/peeling-quimico.jpg" alt="Peeling Químico"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Tratamientos</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Peeling Químico: Renovación Profunda de la Piel</h3>
+                        <p class="blog-card__excerpt">
+                            Todo lo que necesitas saber sobre este tratamiento de rejuvenecimiento: tipos, beneficios y
+                            cuidados
+                            post-peeling.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">12 Dic, 2025</span>
+                            <span class="blog-meta__read-time">4 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-category="skincare">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/rutina-nocturna.jpg" alt="Rutina Nocturna"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Cuidado de la Piel</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Rutina Nocturna: 5 Pasos Para una Piel Radiante</h3>
+                        <p class="blog-card__excerpt">
+                            Aprovecha las horas de sueño para maximizar la regeneración de tu piel con esta rutina
+                            profesional.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">10 Dic, 2025</span>
+                            <span class="blog-meta__read-time">6 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-category="wellness">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/estres-piel.jpg" alt="Estrés y Piel" class="blog-card__image" />
+                        <span class="blog-card__badge">Bienestar</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Cómo el Estrés Afecta Tu Piel y Qué Hacer al Respecto</h3>
+                        <p class="blog-card__excerpt">
+                            Descubre la conexión entre tu bienestar emocional y la salud de tu piel, además de
+                            estrategias efectivas.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">8 Dic, 2025</span>
+                            <span class="blog-meta__read-time">5 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-category="skincare">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/protector-solar.jpg" alt="Protector Solar"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Cuidado de la Piel</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Protector Solar 365 Días: Por Qué es No Negociable</h3>
+                        <p class="blog-card__excerpt">
+                            La verdad sobre la protección solar diaria y cómo elegir el producto perfecto para tu tipo
+                            de piel.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">5 Dic, 2025</span>
+                            <span class="blog-meta__read-time">4 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-category="treatments">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/acido-hialuronico.jpg" alt="Ácido Hialurónico"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Tratamientos</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Ácido Hialurónico: Mitos y Verdades del Rey de la Hidratación</h3>
+                        <p class="blog-card__excerpt">
+                            Desmitificamos el ingrediente más amado del skincare y te explicamos cómo sacarle el máximo
+                            provecho.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">3 Dic, 2025</span>
+                            <span class="blog-meta__read-time">7 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-category="wellness">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/alimentacion-piel.jpg" alt="Alimentación y Piel"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Bienestar</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Nutrición para una Piel Radiante: Qué Comer y Qué Evitar</h3>
+                        <p class="blog-card__excerpt">
+                            Tu piel refleja lo que comes. Conoce los superalimentos que potencian tu belleza natural
+                            desde dentro.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">1 Dic, 2025</span>
+                            <span class="blog-meta__read-time">6 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-category="trends">
+                    <div class="blog-card__image-wrapper">
+                        <img src="../assets/images/blog/tendencias-2025.jpg" alt="Tendencias 2025"
+                            class="blog-card__image" />
+                        <span class="blog-card__badge">Tendencias</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Tendencias en Estética 2025: Lo Que Viene</h3>
+                        <p class="blog-card__excerpt">
+                            Desde tecnologías emergentes hasta ingredientes innovadores, descubre qué dominará el mundo
+                            de la belleza.
+                        </p>
+                        <div class="blog-card__meta">
+                            <span class="blog-meta__date">28 Nov, 2025</span>
+                            <span class="blog-meta__read-time">8 min</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="blog-pagination">
+                <button class="blog-pagination__btn blog-pagination__btn--disabled">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="blog-pagination__number blog-pagination__number--active">1</button>
+                <button class="blog-pagination__number">2</button>
+                <button class="blog-pagination__number">3</button>
+                <button class="blog-pagination__btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div class="blog-newsletter">
+                <div class="blog-newsletter__content">
+                    <h3 class="blog-newsletter__title">¿Quieres más consejos de belleza?</h3>
+                    <p class="blog-newsletter__text">
+                        Suscríbete a nuestro newsletter y recibe tips exclusivos, ofertas especiales y las últimas
+                        novedades
+                        directamente en tu email.
+                    </p>
+                    <form class="blog-newsletter__form">
+                        <input type="email" placeholder="Tu correo electrónico" class="blog-newsletter__input"
+                            required />
+                        <button type="submit" class="blog-newsletter__button">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="../assets/images/logo-icon.png" alt="Lily Belmonte" class="footer__logo-img">
+                    </div>
+                    <p class="footer__text">
+                        Clínica de estética y bienestar. Belleza auténtica.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Contacto</h4>
+                    <p class="footer__text">
+                        <a href="tel:+573014730572" class="footer__link">+57 301 473 0572</a>
+                    </p>
+                    <p class="footer__text">
+                        <a href="mailto:contacto@dralily.com" class="footer__link">contacto@dralily.com</a>
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Ubicación</h4>
+                    <p class="footer__text">
+                        Cra 49c # 92-19<br />
+                        Barranquilla, Colombia
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dralilybelmonte" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZVRknjdzEKI26Ep6D0Sz8w" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/DraLilyBelmonte/" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dra. Lily. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>
