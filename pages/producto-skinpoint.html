@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Serum Vitamina C 20% - Tratamiento antioxidante profesional para el cuidado dermatológico de la piel. Skin Point Boutique." />
+    <title>Serum Vitamina C 20% | Skin Point Boutique</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo-icon.png" />
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/skin-point-shop.css" />
+    <link rel="stylesheet" href="../css/skin-point-dark-theme.css" />
+    <link rel="stylesheet" href="../css/skin-point-product.css" />
+</head>
+
+<body class="sp-shop-page sp-product-page">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/images/skin-point-logo-white-original.png" alt="Skin Point Boutique"
+                    class="header__logo-img">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="sobre-dra-lily.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item">
+                        <a href="../index.html#servicios" class="nav__link nav__link--has-submenu">Tratamientos</a>
+                        <ul class="nav__dropdown">
+                            <li><a href="servicios-faciales.html" class="nav__dropdown-link">Facial</a></li>
+                            <li><a href="servicios-corporales.html" class="nav__dropdown-link">Corporal</a></li>
+                            <li><a href="medicina-biorreguladora.html" class="nav__dropdown-link">Medicina
+                                    Biorreguladora</a></li>
+                            <li><a href="capilar-bienestar.html" class="nav__dropdown-link">Capilar</a></li>
+                            <li><a href="tecnologia-laser.html" class="nav__dropdown-link">Tecnologías</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="../index.html#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="tienda.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Breadcrumbs -->
+        <nav class="sp-breadcrumbs container" aria-label="breadcrumb">
+            <a href="../index.html">Inicio</a>
+            <span class="sp-breadcrumbs__separator">/</span>
+            <a href="../pages/tienda-skinpoint.html">Tienda</a>
+            <span class="sp-breadcrumbs__separator">/</span>
+            <span>Serum Vitamina C 20%</span>
+        </nav>
+
+        <!-- Product Detail Section -->
+        <section class="sp-product-detail">
+            <div class="container sp-product-detail__container">
+
+                <!-- Product Gallery -->
+                <div class="sp-product-detail__gallery">
+                    <div class="sp-gallery">
+                        <div class="sp-gallery__main">
+                            <img src="../assets/images/products/serum-vitamin-c-main.jpg" alt="Serum Vitamina C 20%"
+                                class="sp-gallery__main-image" id="mainProductImage">
+                        </div>
+                        <div class="sp-gallery__thumbnails">
+                            <button class="sp-gallery__thumb sp-gallery__thumb--active"
+                                onclick="changeMainImage(this, '../assets/images/products/serum-vitamin-c-main.jpg')">
+                                <img src="../assets/images/products/serum-vitamin-c-main.jpg" alt="Vista principal">
+                            </button>
+                            <button class="sp-gallery__thumb"
+                                onclick="changeMainImage(this, '../assets/images/products/serum-vitamin-c-bottle.jpg')">
+                                <img src="../assets/images/products/serum-vitamin-c-bottle.jpg" alt="Vista botella">
+                            </button>
+                            <button class="sp-gallery__thumb"
+                                onclick="changeMainImage(this, '../assets/images/products/serum-vitamin-c-texture.jpg')">
+                                <img src="../assets/images/products/serum-vitamin-c-texture.jpg" alt="Textura">
+                            </button>
+                            <button class="sp-gallery__thumb"
+                                onclick="changeMainImage(this, '../assets/images/products/serum-vitamin-c-lifestyle.jpg')">
+                                <img src="../assets/images/products/serum-vitamin-c-lifestyle.jpg" alt="Lifestyle">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="sp-product-detail__info">
+                    <div class="sp-product-info">
+                        <!-- Category -->
+                        <span class="sp-product-info__category">ANTI-EDAD | ILUMINACIÓN</span>
+
+                        <!-- Title -->
+                        <h1 class="sp-product-info__title">Serum Vitamina C 20%</h1>
+
+                        <!-- Rating -->
+                        <div class="sp-product-info__rating">
+                            <div class="sp-rating">
+                                <span class="sp-rating__stars">★★★★★</span>
+                                <span class="sp-rating__count">(127 reviews)</span>
+                            </div>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="sp-product-info__price-wrapper">
+                            <span class="sp-product-info__price">$189.900 COP</span>
+                            <span class="sp-product-info__price-old">$239.900 COP</span>
+                            <span class="sp-product-info__discount">-21%</span>
+                        </div>
+
+                        <!-- Short Description -->
+                        <p class="sp-product-info__excerpt">
+                            Tratamiento antioxidante profesional con Vitamina C estabilizada al 20%. Reduce manchas,
+                            unifica el tono y protege contra daño oxidativo. Resultados visibles en 4 semanas.
+                        </p>
+
+                        <!-- Key Benefits -->
+                        <div class="sp-product-info__benefits">
+                            <h3 class="sp-product-info__benefits-title">Beneficios Clave</h3>
+                            <ul class="sp-benefits-list">
+                                <li class="sp-benefits-list__item">
+                                    <svg class="sp-benefits-list__icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Reduce manchas y unifica el tono</span>
+                                </li>
+                                <li class="sp-benefits-list__item">
+                                    <svg class="sp-benefits-list__icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Estimula producción de colágeno</span>
+                                </li>
+                                <li class="sp-benefits-list__item">
+                                    <svg class="sp-benefits-list__icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Protección antioxidante potente</span>
+                                </li>
+                                <li class="sp-benefits-list__item">
+                                    <svg class="sp-benefits-list__icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Fórmula dermatológicamente probada</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Quantity & Add to Cart -->
+                        <div class="sp-product-info__actions">
+                            <div class="sp-quantity">
+                                <label for="quantity" class="sp-quantity__label">Cantidad</label>
+                                <div class="sp-quantity__controls">
+                                    <button class="sp-quantity__btn sp-quantity__btn--minus"
+                                        onclick="updateQuantity(-1)">−</button>
+                                    <input type="number" id="quantity" class="sp-quantity__input" value="1" min="1"
+                                        max="10" readonly>
+                                    <button class="sp-quantity__btn sp-quantity__btn--plus"
+                                        onclick="updateQuantity(1)">+</button>
+                                </div>
+                            </div>
+                            <button class="sp-add-to-cart">
+                                <svg class="sp-add-to-cart__icon" viewBox="0 0 24 24" fil l="none">
+                                    <path
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m11-9l2 9m0 0l-4-2m4 2l-4-4"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Agregar al Carrito</span>
+                            </button>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="sp-product-info__meta">
+                            <div class="sp-meta-item">
+                                <span class="sp-meta-item__label">SKU:</span>
+                                <span class="sp-meta-item__value">VIT-C-20-30ML</span>
+                            </div>
+                            <div class="sp-meta-item">
+                                <span class="sp-meta-item__label">Categoría:</span>
+                                <a href="#" class="sp-meta-item__link">Anti-edad</a>
+                            </div>
+                            <div class="sp-meta-item">
+                                <span class="sp-meta-item__label">Tipo de piel:</span>
+                                <span class="sp-meta-item__value">Todo tipo</span>
+                            </div>
+                        </div>
+
+                        <!-- Trust Badges -->
+                        <div class="sp-trust-badges">
+                            <div class="sp-trust-badge">
+                                <svg class="sp-trust-badge__icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                                <span>Dermatológicamente probado</span>
+                            </div>
+                            <div class="sp-trust-badge">
+                                <svg class="sp-trust-badge__icon" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3v-8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <span>Pago seguro</span>
+                            </div>
+                            <div class="sp-trust-badge">
+                                <svg class="sp-trust-badge__icon" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <span>Envío gratis +$150.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Product Tabs -->
+        <section class="sp-product-tabs">
+            <div class="container">
+                <div class="sp-tabs">
+                    <div class="sp-tabs__nav">
+                        <button class="sp-tabs__btn sp-tabs__btn--active"
+                            onclick="showTab('description')">Descripción</button>
+                        <button class="sp-tabs__btn" onclick="showTab('ingredients')">Ingredientes</button>
+                        <button class="sp-tabs__btn" onclick="showTab('usage')">Modo de Uso</button>
+                        <button class="sp-tabs__btn" onclick="showTab('reviews')">Reviews (127)</button>
+                    </div>
+
+                    <div class="sp-tabs__content">
+                        <!-- Description Tab -->
+                        <div class="sp-tab-panel sp-tab-panel--active" id="description">
+                            <h3>Descripción del Producto</h3>
+                            <p>
+                                Nuestro Serum de Vitamina C al 20% es una formulación profesional desarrollada para
+                                tratamientos
+                                dermatológicos avanzados. Combinando ácido L-ascórbico estabilizado con ácido ferúlico y
+                                vitamina E,
+                                este serum ofrece una protección antioxidante triple contra el envejecimiento prematuro.
+                            </p>
+                            <p>
+                                La Vitamina C es esencial para la síntesis de colágeno y ayuda a reducir la apariencia
+                                de líneas finas,
+                                arrugas y manchas de hiperpigmentación. Su potente acción antioxidante neutraliza los
+                                radicales libres
+                                causados por la exposición UV y la contaminación ambiental.
+                            </p>
+                            <h4>Resultados Clínicos</h4>
+                            <ul>
+                                <li>85% de usuarios reportan piel más luminosa en 2 semanas</li>
+                                <li>78% nota reducción visible de manchas en 4 semanas</li>
+                                <li>91% percibe mejora en textura y firmeza en 6 semanas</li>
+                            </ul>
+                        </div>
+
+                        <!-- Ingredients Tab -->
+                        <div class="sp-tab-panel" id="ingredients">
+                            <h3>Ingredientes Activos</h3>
+                            <ul class="sp-ingredients-list">
+                                <li><strong>Vitamina C (L-Ascorbic Acid) 20%:</strong> Antioxidante potente, estimula la
+                                    producción de colágeno</li>
+                                <li><strong>Ácido Ferúlico:</strong> Potencia la acción de la Vitamina C y proporciona
+                                    protección adicional</li>
+                                <li><strong>Vitamina E (Tocopherol):</strong> Antioxidante que protege y nutre la piel
+                                </li>
+                                <li><strong>Ácido Hialurónico:</strong> Hidratación profunda y efecto rellenador</li>
+                            </ul>
+                            <p class="sp-ingredients-note">
+                                <strong>Lista completa de ingredientes:</strong> Aqua, L-Ascorbic Acid, Ethoxydiglycol,
+                                Propylene Glycol, Alpha Tocopherol, Ferulic Acid, Sodium Hyaluronate, Panthenol, Sodium
+                                PCA.
+                            </p>
+                        </div>
+
+                        <!-- Usage Tab -->
+                        <div class="sp-tab-panel" id="usage">
+                            <h3>Modo de Uso</h3>
+                            <ol class="sp-usage-steps">
+                                <li><strong>Limpieza:</strong> Aplica sobre rostro limpio y seco, preferiblemente por la
+                                    mañana</li>
+                                <li><strong>Aplicación:</strong> Dispensa 3-4 gotas en la palma de la mano</li>
+                                <li><strong>Masaje:</strong> Aplica con suaves toques ascendentes en rostro, cuello y
+                                    escote</li>
+                                <li><strong>Absorción:</strong> Espera 1-2 minutos antes de aplicar humectante</li>
+                                <li><strong>Protección:</strong> Continúa con protector solar SPF 50+ (uso diurno
+                                    obligatorio)</li>
+                            </ol>
+                            <div class="sp-usage-tips">
+                                <h4>Consejos Profesionales</h4>
+                                <ul>
+                                    <li>Conserva en lugar fresco y oscuro</li>
+                                    <li>Usa dentro de 3 meses después de abrir</li>
+                                    <li>Si es tu primera vez, comienza usando día por medio</li>
+                                    <li>Evita contacto con ojos</li>
+                                    <li>Puede causar leve hormigueo (normal en Vitamina C pura)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Reviews Tab -->
+                        <div class="sp-tab-panel" id="reviews">
+                            <h3>Opiniones de Clientes</h3>
+                            <div class="sp-reviews">
+                                <div class="sp-review">
+                                    <div class="sp-review__header">
+                                        <div class="sp-review__rating">★★★★★</div>
+                                        <span class="sp-review__author">María P.</span>
+                                        <span class="sp-review__date">15 marzo 2024</span>
+                                    </div>
+                                    <p class="sp-review__text">
+                                        Excelente producto. He notado cambios significativos en la luminosidad de mi
+                                        piel
+                                        en solo 3 semanas. Las manchas se han aclarado notablemente. Totalmente
+                                        recomendado.
+                                    </p>
+                                </div>
+                                <div class="sp-review">
+                                    <div class="sp-review__header">
+                                        <div class="sp-review__rating">★★★★★</div>
+                                        <span class="sp-review__author">Ana L.</span>
+                                        <span class="sp-review__date">8 marzo 2024</span>
+                                    </div>
+                                    <p class="sp-review__text">
+                                        La mejor inversión para mi piel. La textura es ligera, se absorbe rápido y
+                                        no deja sensación grasosa. Mi piel se ve más firme y radiante.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="sp-related-products">
+            <div class="container">
+                <h2 class="sp-section-title">Productos Relacionados</h2>
+                <div class="sp-products sp-products--related">
+                    <!-- Related product cards would go here -->
+                    <p class="sp-related__placeholder">Productos relacionados aparecerán aquí</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto" style="margin-top: var(--sp-2xl);">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="../assets/images/skin-point-symbol-white-original.png" alt="Skin Point Boutique"
+                            class="footer__logo-img">
+                    </div>
+                    <p class="footer__text">
+                        Boutique dermatológica. Ciencia y belleza profesional.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Contacto</h4>
+                    <p class="footer__text">
+                        <a href="tel:+573014730572" class="footer__link">+57 301 473 0572</a>
+                    </p>
+                    <p class="footer__text">
+                        <a href="mailto:contacto@dralily.com" class="footer__link">contacto@dralily.com</a>
+                    </p>
+                </div>
+
+                <!-- Columna 3: Dirección -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Ubicación</h4>
+                    <p class="footer__text">
+                        Cra 49c # 92-19<br />
+                        Barranquilla, Colombia
+                    </p>
+                </div>
+
+                <!-- Columna 4: Redes -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dralilybelmonte" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZVRknjdzEKI26Ep6D0Sz8w" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/DraLilyBelmonte/" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dra. Lily. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Gallery image switcher
+        function changeMainImage(thumbnail, imageSrc) {
+            const mainImage = document.getElementById('mainProductImage');
+            mainImage.src = imageSrc;
+
+            // Update active thumbnail
+            document.querySelectorAll('.sp-gallery__thumb').forEach(thumb => {
+                thumb.classList.remove('sp-gallery__thumb--active');
+            });
+            thumbnail.classList.add('sp-gallery__thumb--active');
+        }
+
+        // Quantity controls
+        function updateQuantity(change) {
+            const input = document.getElementById('quantity');
+            let value = parseInt(input.value) + change;
+            if (value < 1) value = 1;
+            if (value > 10) value = 10;
+            input.value = value;
+        }
+
+        // Tabs switcher
+        function showTab(tabName) {
+            // Hide all panels
+            document.querySelectorAll('.sp-tab-panel').forEach(panel => {
+                panel.classList.remove('sp-tab-panel--active');
+            });
+
+            // Remove active from all buttons
+            document.querySelectorAll('.sp-tabs__btn').forEach(btn => {
+                btn.classList.remove('sp-tabs__btn--active');
+            });
+
+            // Show selected panel
+            document.getElementById(tabName).classList.add('sp-tab-panel--active');
+
+            // Add active to clicked button
+            event.target.classList.add('sp-tabs__btn--active');
+        }
+    </script>
+</body>
+
+</html>

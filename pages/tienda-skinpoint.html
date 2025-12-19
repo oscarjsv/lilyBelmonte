@@ -63,6 +63,47 @@
         <p class="sp-hero__count">12 Productos Premium</p>
     </section>
 
+    <!-- Mobile Search Bar -->
+    <div class="sp-mobile-search">
+        <div class="sp-search-wrapper">
+            <svg class="sp-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+                <path d="M16 16L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input type="search" placeholder="Buscar productos..." class="sp-search-input" id="productSearch"
+                aria-label="Buscar productos">
+            <button class="sp-search-clear" id="clearSearch" aria-label="Limpiar búsqueda">
+                <svg width="16" height="16" viewBox="0 0 24 24">
+                    <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Action Bar (Filter & Sort) -->
+    <div class="sp-action-bar">
+        <button class="sp-action-btn sp-filter-trigger" id="openFilters" aria-label="Abrir filtros">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6H20M7 12H17M10 18H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <span>Filtros</span>
+            <span class="sp-filter-badge" id="filterBadge">0</span>
+        </button>
+
+        <select class="sp-action-select" id="sortProducts" aria-label="Ordenar productos">
+            <option value="default">Ordenar por</option>
+            <option value="price-asc">Precio: Bajo a Alto</option>
+            <option value="price-desc">Precio: Alto a Bajo</option>
+            <option value="name-asc">Nombre: A-Z</option>
+            <option value="name-desc">Nombre: Z-A</option>
+        </select>
+    </div>
+
+    <!-- Active Filters Chips -->
+    <div class="sp-active-filters" id="activeFilters">
+        <!-- Chips will be dynamically inserted here -->
+    </div>
+
     <!-- Breadcrumbs -->
     <div class="sp-breadcrumbs">
         <div class="section__container">
@@ -160,6 +201,7 @@
                     <!-- Product 1 -->
                     <article class="sp-product">
                         <div class="sp-product__image-wrapper">
+                            <span class="sp-product__badge sp-product__badge--new">Nuevo</span>
                             <img src="../assets/images/products/product-1.jpg" alt="Serum Vitamina C"
                                 class="sp-product__image" />
                         </div>
@@ -178,6 +220,7 @@
                     <!-- Product 2 -->
                     <article class="sp-product">
                         <div class="sp-product__image-wrapper">
+                            <span class="sp-product__badge sp-product__badge--sale">-15%</span>
                             <img src="../assets/images/products/product-2.jpg" alt="Crema Hidratante"
                                 class="sp-product__image" />
                         </div>
@@ -196,6 +239,7 @@
                     <!-- Product 3 -->
                     <article class="sp-product">
                         <div class="sp-product__image-wrapper">
+                            <span class="sp-product__badge sp-product__badge--popular">Popular</span>
                             <img src="../assets/images/products/product-3.jpg" alt="Protector Solar"
                                 class="sp-product__image" />
                         </div>
@@ -214,6 +258,7 @@
                     <!-- Product 4 -->
                     <article class="sp-product">
                         <div class="sp-product__image-wrapper">
+                            <span class="sp-product__badge sp-product__badge--sold-out">Agotado</span>
                             <img src="../assets/images/products/product-4.jpg" alt="Mascarilla Revitalizante"
                                 class="sp-product__image" />
                         </div>
@@ -442,7 +487,76 @@
         </div>
     </footer>
 
+    <!-- Mobile Filter Drawer -->
+    <div class="sp-filter-drawer" id="filterDrawer">
+        <!-- Overlay -->
+        <div class="sp-drawer-overlay" id="drawerOverlay"></div>
+
+        <!-- Drawer Content -->
+        <div class="sp-drawer-content">
+            <!-- Header -->
+            <div class="sp-drawer-header">
+                <h3>Filtros</h3>
+                <button class="sp-drawer-close" id="closeDrawer" aria-label="Cerrar filtros">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Filters Body -->
+            <div class="sp-drawer-body">
+                <!-- Categories Filter -->
+                <div class="sp-filter-group">
+                    <h4>Categorías</h4>
+                    <div class="sp-filter-options">
+                        <label class="sp-filter-option">
+                            <input type="checkbox" value="limpieza" data-filter-type="category">
+                            <span>Limpieza Facial</span>
+                        </label>
+                        <label class="sp-filter-option">
+                            <input type="checkbox" value="antiedad" data-filter-type="category">
+                            <span>Anti-edad</span>
+                        </label>
+                        <label class="sp-filter-option">
+                            <input type="checkbox" value="hidratacion" data-filter-type="category">
+                            <span>Hidratación</span>
+                        </label>
+                        <label class="sp-filter-option">
+                            <input type="checkbox" value="proteccion" data-filter-type="category">
+                            <span>Protección Solar</span>
+                        </label>
+                        <label class="sp-filter-option">
+                            <input type="checkbox" value="tratamiento" data-filter-type="category">
+                            <span>Tratamientos Especializados</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Range Filter -->
+                <div class="sp-filter-group">
+                    <h4>Rango de Precio</h4>
+                    <div class="sp-price-range">
+                        <input type="range" min="200" max="2000" value="2000" class="sp-price-slider"
+                            id="priceRangeSlider">
+                        <div class="sp-price-values">
+                            <span>$200</span>
+                            <span id="priceRangeMax">$2,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="sp-drawer-footer">
+                <button class="sp-btn-secondary" id="clearFilters">Limpiar</button>
+                <button class="sp-btn-primary" id="applyFilters">Aplicar</button>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="../js/main.js"></script>
+    <script src="../js/mobile-shop.js"></script>
 </body>
 
 </html>

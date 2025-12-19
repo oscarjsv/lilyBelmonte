@@ -65,6 +65,12 @@
   box-shadow: var(--shadow-lg);
 }
 
+/* Image Wrapper for Badge Positioning */
+.service-card__image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .service-card__image {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -74,6 +80,30 @@
 
 .service-card:hover .service-card__image {
   transform: scale(1.05);
+}
+
+/* Badge Overlay on Image */
+.service-card__badge {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  padding: 8px 16px;
+  background: rgba(220, 88, 42, 0.92);
+  color: white;
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-normal);
+}
+
+.service-card:hover .service-card__badge {
+  transform: translateY(-2px);
 }
 
 .service-card__content {
@@ -94,6 +124,21 @@
   line-height: var(--line-height-relaxed);
   color: var(--color-taupe);
   margin-bottom: var(--spacing-md);
+}
+
+/* Old badge styling removed - now using overlay badge above */
+.service-card__badge--old {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(220, 88, 42, 0.1);
+  color: var(--color-naranja);
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+  margin-bottom: var(--spacing-xs);
 }
 
 .service-card__cta {
@@ -165,7 +210,7 @@
 }
 
 .product-card__button:hover {
-  background-color: var(--color-naranja);
+  background-color: #c6a992; /* Skin Point Beige */
 }
 
 /* ========================================

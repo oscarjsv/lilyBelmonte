@@ -283,36 +283,74 @@
 }
 
 /* ========================================
-   BOUTIQUE SECTION
+   BOUTIQUE SECTION - SKIN POINT BRANDING
    ======================================== */
 
 .boutique {
-  background-color: var(--color-gris-calido);
+  background: linear-gradient(135deg, #d7d2cb 0%, #e5e0d8 100%);
 }
 
 .boutique__header {
   text-align: center;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Skin Point Icon */
+.boutique__icon {
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutique__icon-img {
+  width: 240px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 8px rgba(45, 41, 38, 0.1));
 }
 
 .boutique__title {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-h2);
-  color: var(--color-negro);
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d2926; /* Warm Black */
   margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
 }
 
 .boutique__subtitle {
   font-family: var(--font-secondary);
-  font-size: var(--font-size-body);
-  color: var(--color-taupe);
-  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(45, 41, 38, 0.7);
+  max-width: 700px;
   margin: 0 auto var(--spacing-lg);
 }
 
 .boutique__cta-wrapper {
   text-align: center;
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+/* Style the CTA button with Skin Point colors */
+.boutique__cta-wrapper .cta-button--secondary {
+  background-color: #2d2926; /* Warm Black */
+  color: #ffffff;
+  border: 2px solid #2d2926;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 14px 32px;
+  transition: all 0.3s ease;
+}
+
+.boutique__cta-wrapper .cta-button--secondary:hover {
+  background-color: #c6a992; /* Beige */
+  border-color: #c6a992;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(198, 169, 146, 0.3);
 }
 
 /* ========================================
