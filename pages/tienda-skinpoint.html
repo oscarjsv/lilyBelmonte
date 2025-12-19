@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Point Boutique | Productos Dermocosméticos Profesionales</title>
+    <meta name="description"
+        content="Tienda profesional para el cuidado de tu piel. Productos dermocosméticos de alta calidad recomendados por especialistas." />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/skin-point-shop.css" />
+    <link rel="stylesheet" href="../css/skin-point-dark-theme.css" />
+</head>
+
+<body class="sp-shop-page">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/images/skin-point-logo-white-original.png" alt="Skin Point Boutique"
+                    class="header__logo-img">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="sobre-dra-lily.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item">
+                        <a href="../index.html#servicios" class="nav__link nav__link--has-submenu">Tratamientos</a>
+                        <ul class="nav__dropdown">
+                            <li><a href="servicios-faciales.html" class="nav__dropdown-link">Facial</a></li>
+                            <li><a href="servicios-corporales.html" class="nav__dropdown-link">Corporal</a></li>
+                            <li><a href="medicina-biorreguladora.html" class="nav__dropdown-link">Medicina
+                                    Biorreguladora</a></li>
+                            <li><a href="capilar-bienestar.html" class="nav__dropdown-link">Capilar</a></li>
+                            <li><a href="tecnologia-laser.html" class="nav__dropdown-link">Tecnologías</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="../index.html#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="tienda.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="sp-hero">
+        <img src="../assets/images/skin-point-wordmark-black.png" alt="Skin Point Boutique" class="sp-hero__logo" />
+        <p class="sp-hero__subtitle">Tienda profesional para el cuidado de tu piel</p>
+        <p class="sp-hero__count">12 Productos Premium</p>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="sp-breadcrumbs">
+        <div class="section__container">
+            <a href="../index.html">Inicio</a>
+            <span class="sp-breadcrumbs__separator">/</span>
+            <span>Tienda</span>
+        </div>
+    </div>
+
+    <!-- Main Shop Content -->
+    <section style="padding: 0 var(--sp-md);">
+        <div class="section__container">
+
+            <!-- Toolbar -->
+            <div class="sp-toolbar">
+                <div class="sp-toolbar__results">12 productos</div>
+                <select class="sp-toolbar__sort">
+                    <option>Ordenar por precio: bajo a alto</option>
+                    <option>Ordenar por precio: alto a bajo</option>
+                    <option>Ordenar por popularidad</option>
+                    <option>Ordenar por calificación</option>
+                </select>
+            </div>
+
+            <!-- Layout: Sidebar + Products -->
+            <div class="sp-layout">
+
+                <!-- Sidebar -->
+                <aside class="sp-sidebar">
+                    <!-- Categories Widget -->
+                    <div class="sp-widget">
+                        <h3 class="sp-widget__title">Categorías</h3>
+                        <div class="sp-categories">
+                            <div class="sp-category">
+                                <label class="sp-category__item sp-category__item--active">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Todos</span>
+                                    <span class="sp-category__count">(12)</span>
+                                </label>
+                            </div>
+                            <div class="sp-category">
+                                <label class="sp-category__item">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Limpieza</span>
+                                    <span class="sp-category__count">(4)</span>
+                                </label>
+                            </div>
+                            <div class="sp-category">
+                                <label class="sp-category__item">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Hidratación</span>
+                                    <span class="sp-category__count">(3)</span>
+                                </label>
+                            </div>
+                            <div class="sp-category">
+                                <label class="sp-category__item">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Anti-edad</span>
+                                    <span class="sp-category__count">(2)</span>
+                                </label>
+                            </div>
+                            <div class="sp-category">
+                                <label class="sp-category__item">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Protección</span>
+                                    <span class="sp-category__count">(2)</span>
+                                </label>
+                            </div>
+                            <div class="sp-category">
+                                <label class="sp-category__item">
+                                    <span class="sp-category__radio"></span>
+                                    <span>Tratamientos</span>
+                                    <span class="sp-category__count">(1)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter Widget -->
+                    <div class="sp-widget">
+                        <h3 class="sp-widget__title">Precio</h3>
+                        <div class="sp-price-filter">
+                            <input type="range" min="200" max="2000" value="1000" class="sp-price-slider" />
+                            <div class="sp-price-range">
+                                <span>$200</span>
+                                <span>$2,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="sp-products">
+
+                    <!-- Product 1 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-1.jpg" alt="Serum Vitamina C"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">HIDRATACIÓN</span>
+                            <h3 class="sp-product__title">Serum Vitamina C</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(23)</span>
+                            </div>
+                            <div class="sp-product__price">$850 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-2.jpg" alt="Crema Hidratante"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">HIDRATACIÓN</span>
+                            <h3 class="sp-product__title">Crema Hidratante Premium</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(18)</span>
+                            </div>
+                            <div class="sp-product__price">$1,200 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-3.jpg" alt="Protector Solar"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">PROTECCIÓN</span>
+                            <h3 class="sp-product__title">Protector Solar SPF 50</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(42)</span>
+                            </div>
+                            <div class="sp-product__price">$950 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-4.jpg" alt="Mascarilla Revitalizante"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">TRATAMIENTOS</span>
+                            <h3 class="sp-product__title">Mascarilla Revitalizante</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(31)</span>
+                            </div>
+                            <div class="sp-product__price">$750 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-1.jpg" alt="Limpiador Facial"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">LIMPIEZA</span>
+                            <h3 class="sp-product__title">Limpiador Facial Suave</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★☆</span>
+                                <span class="sp-product__reviews">(15)</span>
+                            </div>
+                            <div class="sp-product__price">$650 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-2.jpg" alt="Tónico Facial"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">LIMPIEZA</span>
+                            <h3 class="sp-product__title">Tónico Equilibrante</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(28)</span>
+                            </div>
+                            <div class="sp-product__price">$700 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-3.jpg" alt="Serum Retinol"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">ANTI-EDAD</span>
+                            <h3 class="sp-product__title">Serum Retinol Avanzado</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(35)</span>
+                            </div>
+                            <div class="sp-product__price">$1,400 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-4.jpg" alt="Contorno de Ojos"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">ANTI-EDAD</span>
+                            <h3 class="sp-product__title">Contorno de Ojos</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★☆</span>
+                                <span class="sp-product__reviews">(19)</span>
+                            </div>
+                            <div class="sp-product__price">$980 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 9 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-1.jpg" alt="Exfoliante"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">LIMPIEZA</span>
+                            <h3 class="sp-product__title">Exfoliante Enzimático</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★☆</span>
+                                <span class="sp-product__reviews">(21)</span>
+                            </div>
+                            <div class="sp-product__price">$800 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 10 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-2.jpg" alt="Sérum Ácido Hialurónico"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">HIDRATACIÓN</span>
+                            <h3 class="sp-product__title">Sérum Ácido Hialurónico</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(46)</span>
+                            </div>
+                            <div class="sp-product__price">$1,100 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 11 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-3.jpg" alt="Bruma Facial"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">HIDRATACIÓN</span>
+                            <h3 class="sp-product__title">Bruma Facial Calmante</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★☆</span>
+                                <span class="sp-product__reviews">(14)</span>
+                            </div>
+                            <div class="sp-product__price">$550 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 12 -->
+                    <article class="sp-product">
+                        <div class="sp-product__image-wrapper">
+                            <img src="../assets/images/products/product-4.jpg" alt="Aceite Facial"
+                                class="sp-product__image" />
+                        </div>
+                        <div class="sp-product__content">
+                            <span class="sp-product__category">TRATAMIENTOS</span>
+                            <h3 class="sp-product__title">Aceite Facial Nutritivo</h3>
+                            <div class="sp-product__rating">
+                                <span class="sp-product__stars">★★★★★</span>
+                                <span class="sp-product__reviews">(27)</span>
+                            </div>
+                            <div class="sp-product__price">$1,300 COP</div>
+                            <button class="sp-product__button">Agregar</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto" style="margin-top: var(--sp-2xl);">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="../assets/images/skin-point-symbol-white-original.png" alt="Skin Point Boutique"
+                            class="footer__logo-img">
+                    </div>
+                    <p class="footer__text">
+                        Boutique dermatológica. Ciencia y belleza profesional.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Contacto</h4>
+                    <p class="footer__text">
+                        <a href="tel:+573014730572" class="footer__link">+57 301 473 0572</a>
+                    </p>
+                    <p class="footer__text">
+                        <a href="mailto:contacto@dralily.com" class="footer__link">contacto@dralily.com</a>
+                    </p>
+                </div>
+
+                <!-- Columna 3: Dirección -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Ubicación</h4>
+                    <p class="footer__text">
+                        Cra 49c # 92-19<br />
+                        Barranquilla, Colombia
+                    </p>
+                </div>
+
+                <!-- Columna 4: Redes -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/dralilybelmontedermatologa/" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dralilybelmonte" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZVRknjdzEKI26Ep6D0Sz8w" target="_blank"
+                            rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/DraLilyBelmonte/" target="_blank" rel="noopener noreferrer"
+                            class="footer__social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dra. Lily. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

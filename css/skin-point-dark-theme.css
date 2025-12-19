@@ -1,0 +1,144 @@
+/* ============================================
+   SKIN POINT BOUTIQUE - CUSTOM HEADER/FOOTER
+   Dark Theme Override
+   ============================================ */
+
+/* Override Header for Skin Point Dark Theme */
+.sp-shop-page .header {
+  background-color: var(--sp-black);
+  box-shadow: 0 2px 12px rgba(45, 41, 38, 0.2);
+}
+
+.sp-shop-page .header__logo-img {
+  opacity: 0.95;
+}
+
+.sp-shop-page .header__logo:hover .header__logo-img {
+  opacity: 1;
+}
+
+.sp-shop-page .nav__link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sp-shop-page .nav__link:hover {
+  color: var(--sp-white);
+}
+
+.sp-shop-page .nav__link::after {
+  background-color: var(--sp-beige);
+}
+
+.sp-shop-page .nav__link--cta {
+  background-color: var(--sp-beige);
+  color: var(--sp-black);
+}
+
+.sp-shop-page .nav__link--cta:hover {
+  background-color: var(--sp-white);
+  color: var(--sp-black);
+}
+
+.sp-shop-page .menu-toggle__bar {
+  background-color: var(--sp-white);
+}
+
+/* Mobile Navigation Override */
+@media (max-width: 767px) {
+  .sp-shop-page .nav {
+    background-color: rgba(45, 41, 38, 0.98);
+    backdrop-filter: blur(10px);
+  }
+
+  .sp-shop-page .nav__link {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .sp-shop-page .nav__link--has-submenu {
+    background: linear-gradient(90deg, rgba(198, 169, 146, 0.15), transparent);
+  }
+
+  .sp-shop-page .nav__dropdown {
+    background: linear-gradient(
+      to bottom,
+      rgba(198, 169, 146, 0.12),
+      rgba(198, 169, 146, 0.06)
+    );
+  }
+
+  .sp-shop-page .nav__dropdown-link {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .sp-shop-page .nav__dropdown-link:hover {
+    background-color: rgba(198, 169, 146, 0.2);
+    color: var(--sp-white);
+  }
+}
+
+/* Desktop Dropdown Override */
+@media (min-width: 768px) {
+  .sp-shop-page .nav__dropdown {
+    background-color: var(--sp-black);
+    border: 1px solid rgba(198, 169, 146, 0.2);
+  }
+
+  .sp-shop-page .nav__dropdown::before {
+    border-bottom-color: var(--sp-black);
+  }
+
+  .sp-shop-page .nav__dropdown-link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .sp-shop-page .nav__dropdown-link:hover {
+    background-color: rgba(198, 169, 146, 0.15);
+    color: var(--sp-white);
+  }
+}
+
+/* Override Footer for Skin Point Dark Theme */
+.sp-shop-page .footer {
+  background: linear-gradient(135deg, #2d2926 0%, #3a3632 100%);
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(198, 169, 146, 0.2);
+}
+
+.sp-shop-page .footer__logo-img {
+  opacity: 0.9;
+}
+
+.sp-shop-page .footer__title {
+  color: var(--sp-white);
+  border-bottom: 2px solid var(--sp-beige);
+}
+
+.sp-shop-page .footer__text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.sp-shop-page .footer__link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.sp-shop-page .footer__link:hover {
+  color: var(--sp-beige);
+}
+
+.sp-shop-page .footer__social-link {
+  background-color: rgba(198, 169, 146, 0.15);
+  color: var(--sp-white);
+  border: 1px solid rgba(198, 169, 146, 0.2);
+}
+
+.sp-shop-page .footer__social-link:hover {
+  background-color: var(--sp-beige);
+  color: var(--sp-black);
+  border-color: var(--sp-beige);
+}
+
+.sp-shop-page .footer__bottom {
+  border-top: 1px solid rgba(198, 169, 146, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+}
